@@ -1,0 +1,39 @@
+.hero__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+
+}
+
+.hero__list>li {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.hero__list>li>p {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.hero__list>li:nth-child(3)>p {
+    text-align: right;
+}
+
+
+.hero__list>li:nth-child(3)>.hero__number::before {
+    content: 'более';
+    font-size: 25px;
+    line-height: 145.061%;
+    text-transform: lowercase;
+}

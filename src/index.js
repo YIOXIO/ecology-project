@@ -1,6 +1,21 @@
-const numbers = [2, 3, 5];
+import './pages/index.less';
 
-// Стрелочная функция. Не запнётся ли на ней Internet Explorer?
-const doubledNumbers = numbers.map(number => number * 2);
 
-console.log(doubledNumbers); // 4, 6, 10 
+
+const numbers = document.querySelectorAll('.hero__number');
+
+numbers.forEach(number => {
+    let stop = parseInt(number.getAttribute('data-stop'));
+    let count = 0;
+    let increment = stop / 100;
+
+    let timer = setInterval(() => {
+        count += increment;
+        number.textContent = Math.floor(count);
+
+        if (count >= stop) {
+            clearInterval(timer);
+            number.textContent = stop;
+        }
+    }, 15);
+});

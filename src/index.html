@@ -4,11 +4,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание вашей веб-страницы здесь">
     <title>Эко</title>
 </head>
 
-<body>
+<body class="root">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__logos">
+                <li>
+                    <a href="#">
+                        <img class="logo" src="<%=require('./images/logos/reu_logo.webp')%>" alt="Логотип РЭУ">
+                    </a>
 
+                </li>
+                <li>
+                    <a href="#"> <img class="logo" src="<%=require('./images/logos/uct.webp')%>"
+                            alt="Логотип Управления цифровой трансформации">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#"> <img class="logo" src="<%=require('./images/logos/mmkk_logo.webp')%>"
+                            alt="Логотип Международный молодежный климатический клуб">
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__links">
+                <li>
+                    <a href="#" class="header__link">главная</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">о нас</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">ммкк</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">мониторинг</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">партнеры</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">новости</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page">
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__title">климатический портал</h1>
+                    <h2 class="hero__subtitle">рэу им. Г.В. Плеханова</h2>
+                </div>
+                <ul class="hero__list">
+                    <li>
+                        <span data-stop="5974" class="hero__number">5974</span>
+                        <p>участников</p>
+                    </li>
+                    <li>
+                        <span data-stop="105" class="hero__number">105</span>
+                        <p>мероприятий</p>
+                    </li>
+                    <li>
+                        <span data-stop="6000" class="hero__number">6000</span>
+                        <p>высажено флоры</p>
+                    </li>
+                </ul>
+                <div class="hero__wrapper">
+                    <p class="hero__descr">Климат</p>
+                    <p class="hero__descr">представляет совокупность всех природных явлений, тесно связанных с
+                        человеческим
+                        фактором</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="mission">
+            <div class="mission__container">
+                <h2 class="mission__title">миссия</h2>
+                <div class="mission__wrapper">
+                    <p class="mission__descr">Улучшение окружающей среды, посредством масштабирования климатических
+                        положительных тенденций, в целях вовлечения населения в реализацию социальных и экологических
+                        проектов, для будущего страны и мира. Основная задача портала информирование о последних
+                        новостях, исследованиях и событиях, связанных с климатическими изменениями. Создание
+                        коллабораций на микро- и макроуровнях с компаниями, занимающимися созданием таких проектов.</p>
+                    <a href="#" class="mission__button">Подробнее</a>
+                </div>
+            </div>
+            <div class="mission__container">
+                <div class="mission__inner">
+                    <div class="mission__wrapper mission__wrapper_column">
+                        <h2 class="mission__name">Путин Владимир Владимирович</h2>
+                        <p class="mission__duty">Президент Российской Федерации</p>
+                        <blockquote class="mission__quotes">...Упомяну и о том, что в этом году российским
+                            председательством
+                            уделяется
+                            значительное внимание вопросам, связанным с изменением климата. Синхронизацией подходов
+                            пятерки
+                            в области климатического регулирования мог бы заняться климатический и экологический клуб
+                            ЕврАзЭС, в задачи которого входила бы реализация совместных научных исследований и
+                            разработок,
+                            внедрение зеленых технологий, достижение международного признания евразийских климатических
+                            инициатив, улучшение состояния водных экосистем, сохранение биологического разнообразия,
+                            геологоразведка и освоение недр, осуществление проектов о переработке мусора многое-многое
+                            другое.</blockquote>
+
+                    </div>
+                    <div class="mission__border">
+                        <img src="<%=require('./images/people/vladimir_putin.png')%>"
+                            alt="Фотография Владимира Владимировича Путина" class="mission__avatar">
+                    </div>
+                </div>
+                <div class="mission__inner">
+                    <div class="mission__wrapper mission__wrapper_column">
+                        <h2 class="mission__name">Эдельгериев Руслан Сайд-Хусайнович</h2>
+                        <p class="mission__duty">Советник Президента Российской Федерации по вопросам изменения климата
+                        </p>
+                        <blockquote class="mission__quotes">В октябре 2021 года Правительство Российской Федерации
+                            утвердило
+                            Стратегию социально-экономического развития страны с низким уровнем выбросов парниковых
+                            газов до 2050 года. В стратегии заложены два сценария - инерционный и целевой (интенсивный),
+                            при этом целевой сценарий взят за основной. Сценарии отличаются наборами мер по
+                            декарбонизации российской экономики и эффектом, которые дают эти меры для снижения выбросов
+                            парниковых газов.
+                            Задача для всех непростая, требующая перестройки целого комплекса процессов. Решать ее будем
+                            также комплексно, снижая выбросы парниковых газов и увеличивая поглощающую способность лесов
+                            и других экосистем.</blockquote>
+
+                    </div>
+                    <div class="mission__border">
+                        <img src="<%=require('./images/people/ruslan_edelgeriev.png')%>"
+                            alt="Фотография Эдельгериев Руслан Сайд-Хусайнович" class="mission__avatar">
+                    </div>
+                </div>
+                <div class="mission__inner">
+                    <div class="mission__wrapper mission__wrapper_column">
+                        <h2 class="mission__name">Лобанов Иван Васильевич</h2>
+                        <p class="mission__duty">Ректор ФГБОУ ВО «Российский экономический университет имени Г.В.
+                            Плеханова» </p>
+                        <blockquote class="mission__quotes">Обсуждение экологической повестки вышло на первый план за
+                            последние
+                            несколько лет. Игнорирование проблем экологии может дорого обойтись всему человечеству и это
+                            необходимо учитывать в принятии решений при реализации экономического потенциала страны, в
+                            том числе в ключе академического стратегического лидерства университетов.
+                            Сегодня важно сделать вузы не просто площадкой для проведений фундаментальных исследований в
+                            части сохранения окружающей среды, но и плацдармом для выпуска лидеров, обладающих не только
+                            академическими знаниями, прикладными навыками, но и готовых к внедрению принципов ESG.
+                        </blockquote>
+
+                    </div>
+                    <div class="mission__border">
+                        <img src="<%=require('./images/people/ivan_lobanov.png')%>"
+                            alt="Фотография Лобанов Иван Васильевич" class="mission__avatar">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
