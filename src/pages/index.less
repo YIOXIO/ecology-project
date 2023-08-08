@@ -53,8 +53,10 @@
 }
 
 .branches__container {
-    max-width: 1380px;
+    max-width: 1477px;
     margin: 120px auto 143px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .branches__round {
@@ -66,16 +68,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     position: relative;
     box-sizing: border-box;
 }
 
 .branches__list {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     max-width: 446px;
     max-height: 446px;
     border-radius: 446px;
@@ -88,8 +85,8 @@
     padding: 0;
     height: 100%;
     width: 100%;
-    grid-template-rows: repeat(14, 1fr);
-    grid-template-columns: repeat(7, 1fr);
+    transform-origin: top center;
+    transition: transform 0.3s ease;
 }
 
 .branches__link {
@@ -114,7 +111,28 @@
     text-shadow: 0px -1px 22px;
 }
 
+.branches__link_active {
+    font-weight: 800;
+    color: rgb(127, 176, 78);
+    animation: floatingShadow 3s infinite;
 
+}
+
+
+
+@keyframes floatingShadow {
+    0% {
+        text-shadow: 2px 6px 12px rgba(127, 176, 78, 0);
+    }
+
+    50% {
+        text-shadow: 5px 6px 7px rgba(127, 176, 78, 1);
+    }
+
+    100% {
+        text-shadow: 5px 6px 2px rgba(127, 176, 78, 0);
+    }
+}
 
 .branches__item:nth-child(1) {
     position: absolute;
@@ -402,6 +420,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    rotate: none;
 }
 
 .branches__number::after {
@@ -415,4 +434,75 @@
     line-height: 144.9%;
     /* 43.47px */
     text-transform: uppercase;
+}
+
+.branches__arrow {
+    position: absolute;
+    left: 105px;
+}
+
+.content__title {
+    color: #0E212F;
+    font-family: Montserrat;
+    font-size: @font-L;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.branches__content {
+    display: none;
+}
+
+.branches__content_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    padding-left: 100px;
+
+}
+
+
+
+.content__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 23px;
+
+}
+
+.content__list>li {
+    color: #7FB04E;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144.9%;
+    /* 86.94px */
+    text-transform: uppercase;
+}
+
+
+.content__list>li>p {
+    color: #191919;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.9%;
+    padding: 0;
+    margin: 0;
 }
