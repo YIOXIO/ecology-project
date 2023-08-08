@@ -23,6 +23,13 @@
 
 @font-face {
     font-family: "Montserrat";
+    font-weight: 800;
+    src: url('../vendor/fonts/Montserrat-ExtraBold.woff') format('woff'),
+        url('../vendor/fonts/Montserrat-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Montserrat";
     font-weight: 700;
     src: url('../vendor/fonts/Montserrat-Bold.woff') format('woff'),
         url('../vendor/fonts/Montserrat-Bold.woff2') format('woff2');
