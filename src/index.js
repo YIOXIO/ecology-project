@@ -37,22 +37,38 @@ branchesLinks.forEach((link, index) => {
     });
 });
 
-document.getElementById("bryansk").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(0)"; });
-document.getElementById("volgograd").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(22.5deg)"; });
-document.getElementById("voronej").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(45deg)"; });
-document.getElementById("erevan").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(65deg)"; });
-document.getElementById("ivanovo").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(90deg)"; });
-document.getElementById("krasnodar").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(112.5deg)"; });
-document.getElementById("minsk").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(135deg)"; });
-document.getElementById("orenburg").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(157.5deg)"; });
-document.getElementById("perm").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(202deg)"; });
-document.getElementById("pyatigorsk").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(224.5deg)"; });
-document.getElementById("sevastopol").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(247deg)"; });
-document.getElementById("smolensk").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(270deg)"; });
-document.getElementById("tashkent").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(292.5deg)"; });
-document.getElementById("tula").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(315deg)"; });
-document.getElementById("ulan-bator").addEventListener("click", function () { document.querySelector(".round").style.transform = "rotate(338.5deg)"; });
+// Координаты для стрелки на циферблате
+const cities = [
+    { id: "bryansk", degrees: "0" },
+    { id: "volgograd", degrees: "22.5" },
+    { id: "voronej", degrees: "45" },
+    { id: "erevan", degrees: "65" },
+    { id: "ivanovo", degrees: "90" },
+    { id: "krasnodar", degrees: "112.5" },
+    { id: "minsk", degrees: "135" },
+    { id: "orenburg", degrees: "157.5" },
+    { id: "perm", degrees: "202" },
+    { id: "pyatigorsk", degrees: "224.5" },
+    { id: "sevastopol", degrees: "247" },
+    { id: "smolensk", degrees: "270" },
+    { id: "tashkent", degrees: "292.5" },
+    { id: "tula", degrees: "315" },
+    { id: "ulan-bator", degrees: "338.5" }
+];
 
+cities.forEach(city => { document.getElementById(city.id).addEventListener("click", function () { document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`; }); });
+
+
+
+// const cityContainer = document.querySelector(".branches__list");
+// cityContainer.addEventListener("click", function (event) {
+//     const target = event.target;
+//     if (target.classList.contains("city")) {
+//         const cityId = target.id;
+//         const city = cities.find(city => city.id === cityId);
+//         document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`;
+//     }
+// });
 
 
 // Переключение табов
@@ -72,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
     const tabsHandler = (path) => {
         tabsContent.forEach(el => { el.classList.remove('branches__content_active') });
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('branches__content_active');
