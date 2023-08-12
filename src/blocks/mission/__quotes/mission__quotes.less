@@ -7,15 +7,32 @@
     line-height: 25px;
     margin: 0;
     padding: 0;
-    max-width: 816px;
+    max-width: 790px;
+    quotes: "«" "»";
 }
 
+
+
+
+
+
 .mission__quotes::before {
-    content: url('../../../images/arrow_left.png');
+
+    content: open-quote;
+    font-size: 65px;
+    color: #54A700;
+    font-weight: 500;
+    position: absolute;
+    transform: translate(-37px, 0);
+
 }
 
 .mission__quotes::after {
-    content: url('../../../images/arrow_right.png');
-
+    content: close-quote;
+    font-size: 65px;
+    color: #54A700;
+    font-weight: 500;
+    position: absolute;
+    transform: translate(10px, 10px);
 
 }

@@ -23,18 +23,52 @@ numbers.forEach(number => {
 
 
 
-
 // Отображение цифры соответсвуещему филиалу
 const branchesLinks = document.querySelectorAll('.branches__link');
 const branchesNumber = document.querySelector('.branches__number');
+
 
 branchesLinks.forEach((link, index) => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
         const number = (index + 1).toString().padStart(2, '0');
         branchesNumber.textContent = number;
+
     });
 });
+
+// Координаты для стрелки на циферблате
+const cities = [
+    { id: "bryansk", degrees: "0" },
+    { id: "volgograd", degrees: "22.5" },
+    { id: "voronej", degrees: "45" },
+    { id: "erevan", degrees: "65" },
+    { id: "ivanovo", degrees: "90" },
+    { id: "krasnodar", degrees: "112.5" },
+    { id: "minsk", degrees: "135" },
+    { id: "orenburg", degrees: "157.5" },
+    { id: "perm", degrees: "202" },
+    { id: "pyatigorsk", degrees: "224.5" },
+    { id: "sevastopol", degrees: "247" },
+    { id: "smolensk", degrees: "270" },
+    { id: "tashkent", degrees: "292.5" },
+    { id: "tula", degrees: "315" },
+    { id: "ulan-bator", degrees: "338.5" }
+];
+
+cities.forEach(city => { document.getElementById(city.id).addEventListener("click", function () { document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`; }); });
+
+
+
+// const cityContainer = document.querySelector(".branches__list");
+// cityContainer.addEventListener("click", function (event) {
+//     const target = event.target;
+//     if (target.classList.contains("city")) {
+//         const cityId = target.id;
+//         const city = cities.find(city => city.id === cityId);
+//         document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`;
+//     }
+// });
 
 
 // Переключение табов
@@ -54,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
     const tabsHandler = (path) => {
         tabsContent.forEach(el => { el.classList.remove('branches__content_active') });
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('branches__content_active');
