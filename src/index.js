@@ -56,19 +56,18 @@ const cities = [
     { id: "ulan-bator", degrees: "338.5" }
 ];
 
-cities.forEach(city => { document.getElementById(city.id).addEventListener("click", function () { document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`; }); });
 
 
 
-// const cityContainer = document.querySelector(".branches__list");
-// cityContainer.addEventListener("click", function (event) {
-//     const target = event.target;
-//     if (target.classList.contains("city")) {
-//         const cityId = target.id;
-//         const city = cities.find(city => city.id === cityId);
-//         document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`;
-//     }
-// });
+const cityContainer = document.querySelector(".branches__list");
+cityContainer.addEventListener("click", function (event) {
+    const target = event.target;
+    if (target.classList.contains("branches__link")) {
+        const cityId = target.id;
+        const city = cities.find(city => city.id === cityId);
+        document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`;
+    }
+});
 
 
 // Переключение табов
@@ -94,3 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 });
 
+const burgerBtn = document.querySelector('.ham');
+const burgerMenu = document.querySelector('.hamburger');
+
+burgerBtn.addEventListener('click', () => {
+    burgerMenu.classList.toggle('hamburger_active');
+});

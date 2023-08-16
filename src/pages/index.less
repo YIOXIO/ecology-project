@@ -4,7 +4,14 @@
 @import '../blocks/root/root.less';
 @import '../variables/variables.less';
 
+
+// Стили для Round
+@import '../blocks/round/round.less';
+
+
+
 // Стили для Header
+@import '../blocks/header/header.less';
 @import '../blocks/header/__nav/header__nav.less';
 @import '../blocks/header/__logos/header__logos.less';
 @import '../blocks/header/__links/header__links.less';
@@ -56,5 +63,187 @@
 @import '../blocks/branches/__item/branches__item.less';
 
 
-// Стили для Round
-@import '../blocks/round/round.less';
+// Стили для секция MMKK
+@import '../blocks/mmkk/mmkk.less';
+@import '../blocks/mmkk/__wrapper/mmkk__wrapper.less';
+@import '../blocks/mmkk/__container/mmkk__container.less';
+@import '../blocks/mmkk/__title/mmkk__title.less';
+@import '../blocks/mmkk/__logo/mmkk__logo.less';
+@import '../blocks/mmkk/__descr/mmkk__descr.less';
+@import '../blocks/mmkk/__button/mmkk__button.less';
+
+// Стили для секции Monitoring
+@import '../blocks/monitoring/monitoring.less';
+@import '../blocks/monitoring/__container/monitoring__container.less';
+@import '../blocks/monitoring/__title/monitoring__title.less';
+@import '../blocks/monitoring/__descr/monitoring__descr.less';
+@import '../blocks/monitoring/__button/monitoring__button.less';
+
+
+// Стили для секции Partner
+@import '../blocks/partner/partner.less';
+@import '../blocks/partner/__logo/partner__logo.less';
+@import '../blocks/partner/__title/partner__title.less';
+@import '../blocks/partner/__list/partner__list.less';
+
+
+// Стили для Footer
+@import '../blocks/footer/footer.less';
+@import '../blocks/footer/__list-logo/footer__list-logo.less';
+@import '../blocks/footer/__links/footer__links.less';
+@import '../blocks/footer/__link/footer__link.less';
+@import '../blocks/footer/footer-media/footer-media.less';
+
+
+
+
+
+
+
+
+
+
+.news__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.news__title {
+    color: #0E212F;
+    font-family: Montserrat;
+    font-size: @font-XL;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+
+.news {
+    padding: 143px 270px 149px;
+}
+
+.news__wrapper {
+    max-width: 1380px;
+    background: #F4F4F4;
+    padding: 89px 84px;
+}
+
+.news__button {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%;
+    text-transform: uppercase;
+    background-color: rgba(84, 167, 0, 1);
+    padding: 17px 27px 20px 28px;
+    border: 0;
+    max-height: 65px;
+    max-width: 275px;
+    width: 100%;
+    text-decoration: none;
+    transition: box-shadow .3s ease-in;
+    box-sizing: border-box;
+}
+
+.news__button:hover {
+    box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
+}
+
+.news__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(181px, 8fr));
+    grid-template-rows: 2fr;
+    grid-auto-flow: dense;
+    gap: 20px;
+    justify-items: center;
+}
+
+.news__image {
+    margin-bottom: 17px;
+    width: 100%;
+}
+
+.news__date {
+    color: #9B9B9B;
+    font-family: Inter;
+    font-size: @font-S;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+    margin: 0 0 7px;
+}
+
+.news__descr {
+    color: #191919;
+    font-family: Inter;
+    font-size: @font-S;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.news__link {
+    text-decoration: none;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.news__card_big {
+    max-width: 36.4375vw;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+
+
+
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}

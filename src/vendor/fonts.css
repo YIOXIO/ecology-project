@@ -13,6 +13,14 @@
         url('../vendor/fonts/Inter-Medium.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: "Inter";
+    font-weight: 600;
+    src: url('../vendor/fonts/Inter-SemiBold.woff') format('woff'),
+        url('../vendor/fonts/Inter-SemiBold.woff2') format('woff2');
+}
+
+
 
 @font-face {
     font-family: "Inter";

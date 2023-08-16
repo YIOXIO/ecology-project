@@ -10,10 +10,16 @@
     text-transform: uppercase;
 }
 
-@media screen and(max-width: 769px),
-(max-width: 967px) {
+@media screen and (min-width: 769px) and (max-width: 967px) {
     .hero__number {
-        font-size: 50px;
+        font-size: 40px;
+
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+    .hero__number {
+        font-size: 24px;
 
     }
 }
