@@ -57,6 +57,8 @@ const cities = [
 ];
 
 
+
+
 const cityContainer = document.querySelector(".branches__list");
 cityContainer.addEventListener("click", function (event) {
     const target = event.target;
@@ -68,7 +70,7 @@ cityContainer.addEventListener("click", function (event) {
 });
 
 
-// // Переключение табов
+// Переключение табов
 
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelector('.branches__container');
@@ -90,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('branches__content_active');
     };
 });
-
 
 const burgerBtn = document.querySelector('.ham');
 const burgerMenu = document.querySelector('.hamburger');
