@@ -10,27 +10,29 @@
 
 <body class="root">
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__logos">
-                <li>
-                    <a href="#">
-                        <img class="logo" src="<%=require('./images/logos/reu_logo.webp')%>" alt="Логотип РЭУ">
-                    </a>
 
-                </li>
-                <li>
-                    <a href="#"> <img class="logo" src="<%=require('./images/logos/uct.webp')%>"
-                            alt="Логотип Управления цифровой трансформации">
-                    </a>
+        <ul class="header__logos">
+            <li>
+                <a href="#">
+                    <img class="logo" src="<%=require('./images/logos/reu_logo.webp')%>" alt="Логотип РЭУ">
+                </a>
 
-                </li>
-                <li>
-                    <a href="#"> <img class="logo" src="<%=require('./images/logos/mmkk_logo.webp')%>"
-                            alt="Логотип Международный молодежный климатический клуб">
-                    </a>
-                </li>
-            </ul>
-            <ul class="header__links">
+            </li>
+            <li>
+                <a href="#"> <img class="logo" src="<%=require('./images/logos/uct.webp')%>"
+                        alt="Логотип Управления цифровой трансформации">
+                </a>
+
+            </li>
+            <li>
+                <a href="#"> <img class="logo" src="<%=require('./images/logos/mmkk_logo.webp')%>"
+                        alt="Логотип Международный молодежный климатический клуб">
+                </a>
+            </li>
+        </ul>
+        <nav role="navigation" class="header__nav">
+
+            <ul class="header__links hamburger">
                 <li>
                     <a href="#" class="header__link">главная</a>
                 </li>
@@ -51,6 +53,13 @@
                 </li>
             </ul>
         </nav>
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
     </header>
     <main class="page">
         <section class="hero">
@@ -548,7 +557,183 @@
                 </div>
             </div>
         </section>
+        <section class="mmkk">
+            <div class="mmkk__wrapper">
+                <div class="mmkk__container">
+                    <img src="<%=require('./images/logos/mmkk_logo_white.png')%>" alt="Логотип ММКК" class="mmkk__logo">
+                    <a href="#" class="mmkk__button">Подробнее</a>
+                </div>
+                <div class="mmkk__container">
+                    <h2 class="mmkk__title">ММКК</h2>
+                    <p class="mmkk__descr">Международный молодежный климатический клуб — это глобальное объединение
+                        молодых
+                        людей, чьей целью является борьба с изменением климата и создание устойчивого зеленого будущего
+                        для
+                        нашей планеты.
+                        В нашем клубе собираются активисты и сторонники, которые осознают неотложность угрозы и
+                        стремятся к
+                        реальным изменениям</p>
+                </div>
+            </div>
+        </section>
+        <section class="monitoring">
+            <h2 class="monitoring__title">мониторинг</h2>
+            <div class="monitoring__container">
+                <p class="monitoring__descr">В процессе реализации</p>
+                <a href="#" class="monitoring__button">Подробнее</a>
+            </div>
+        </section>
+        <section class="partner">
+            <h2 class="partner__title">партнеры</h2>
+            <ul class="partner__list">
+                <li class="partner__item">
+                    <a href="#" class="partner__link">
+                        <img src="<%=require('./images/logos/reo_logo.png')%>" alt="Логотип РЭО" class="partner__logo">
+                    </a>
+                </li>
+                <li class="partner__item">
+                    <a href="#" class="partner__link">
+                        <img src="<%=require('./images/logos/green_logo.png')%>" alt="Логотип Зеленые Вузы России"
+                            class="partner__logo">
+                    </a>
+                </li>
+                <li class="partner__item">
+                    <a href="#" class="partner__link">
+                        <img src="<%=require('./images/logos/garden_logo.png')%>" alt="Логотип Сад Памяти"
+                            class="partner__logo">
+                    </a>
+                </li>
+                <li class="partner__item">
+                    <a href="#" class="partner__link">
+                        <img src="<%=require('./images/logos/president_logo.png')%>" alt="Логотип Президент России"
+                            class="partner__logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="news">
+            <div class="news__wrapper">
+                <div class="news__container">
+                    <h2 class="news__title">Новости</h2>
+                    <a href="#" class="news__button">Подробнее</a>
+                </div>
+                <ul class="news__list">
+                    <li class="news__card news__card_big">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image1.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">24.05.23</p>
+                            <p class="news__descr">Экология для молодёжи: Плехановский университет на X Невском
+                                международном экологическом конгрессе</p>
+                        </a>
+                    </li>
+                    <li class="news__card news__card_big">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image2.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">22.05.23</p>
+                            <p class="news__descr">РЭУ им. Г.В. Плеханова победил в конкурсе студенческих экопроектов
+                                «Мой зеленый вуз»</p>
+                        </a>
+
+                    </li>
+                    <li class="news__card">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image3.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">14.02.23</p>
+                            <p class="news__descr">Учёные РЭУ им. Г.В. Плеханова представят проект «зелёной» экономики в
+                                Казахстане</p>
+                        </a>
+                    </li>
+                    <li class="news__card">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image4.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">04.02.23</p>
+                            <p class="news__descr">Разумное потребление: Eco Fashion Day в Плехановке</p>
+                        </a>
+                    </li>
+                    <li class="news__card">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image5.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">12.01.23</p>
+                            <p class="news__descr">Устойчивое развитие Арктики: ориентация на коренные народы</p>
+                        </a>
+                    </li>
+                    <li class="news__card">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image6.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">22.12.22</p>
+                            <p class="news__descr">Ядерное оружие и климат – главное для международного сообщества</p>
+                        </a>
+                    </li>
+                    <li class="news__card">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image7.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">20.12.22</p>
+                            <p class="news__descr">Денис Буцаев назначен заведующим кафедрой РЭО в РЭУ им. Г.В.
+                                Плеханова</p>
+                        </a>
+                    </li>
+                    <li class="news__card">
+                        <a class="news__link" href="#">
+                            <img src="<%=require('./images/image8.png')%>" alt="Обложка для новости об экологии"
+                                class="news__image">
+                            <p class="news__date">19.12.22</p>
+                            <p class="news__descr">Зелёный университет: экология в РЭУ им. Г.В. Плеханова</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <ul class="footer__list-logo">
+            <li>
+                <a href="#">
+                    <img src="<%=require('./images/logos/reu_logo_white.png')%>" alt="Лотоип РЭУ" class="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<%=require('./images/logos/uct_logo_white.png')%>"
+                        alt="Логотип Управления цифровой трансформации" class="logo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<%=require('./images/logos/mmkk_logo_white.png')%>"
+                        alt="Логотип международный молодежный климатический клуб" class="logo">
+                </a>
+            </li>
+        </ul>
+        <nav class="footer__nav">
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link">главная</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">о нас</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">ммкк</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">мониторинг</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">партнеры</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">новости</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
