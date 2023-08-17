@@ -59,16 +59,13 @@ const cities = [
 
 
 
-const cityContainer = document.querySelector(".branches__list");
-cityContainer.addEventListener("click", function (event) {
-    const target = event.target;
-    if (target.classList.contains("branches__link")) {
-        const cityId = target.id;
-        const city = cities.find(city => city.id === cityId);
-        document.querySelector(".round").style.transform = `rotate(${city.degrees}deg)`;
-    }
+const roundElement = document.querySelector(".round");
+cities.forEach(city => {
+    const linkElement = document.getElementById(city.id);
+    linkElement.addEventListener("click", function () {
+        roundElement.style.transform = `rotate(${city.degrees}deg)`;
+    });
 });
-
 
 // Переключение табов
 
