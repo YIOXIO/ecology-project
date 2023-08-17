@@ -17,7 +17,6 @@
 
 
 .mission__quotes::before {
-
     content: open-quote;
     font-size: 65px;
     color: #54A700;
@@ -35,4 +34,18 @@
     position: absolute;
     transform: translate(10px, 10px);
 
+}
+
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+
+    .mission__quotes::after {
+        font-size: 42px;
+
+    }
+
+    .mission__quotes::before {
+        font-size: 42px;
+        transform: translate(-24px, 0);
+    }
 }

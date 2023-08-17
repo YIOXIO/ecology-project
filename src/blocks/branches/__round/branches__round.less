@@ -1,5 +1,5 @@
 .branches__round {
-    width: 573px;
+    max-width: 573px;
     height: 573px;
     flex-shrink: 0;
     border-radius: 573px;
@@ -7,6 +7,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+
+
+@media screen and (min-width: 120px) and (max-width: 768px) {
+    .branches__round {
+        border: none;
+        position: inherit;
+        right: 0;
+        top: 0;
+    }
+
 }

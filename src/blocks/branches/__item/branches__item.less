@@ -273,3 +273,25 @@
     right: -24px;
     top: -5px;
 }
+
+
+@media screen and (min-width: 120px) and (max-width: 768px) {
+    .branches__item {
+        border-radius: 20px;
+        border: 1px solid rgba(84, 167, 0, 1);
+        padding: 10px;
+        position: inherit;
+        text-align: center;
+    }
+
+    .branches__item:nth-child(1) {
+        position: inherit;
+
+    }
+
+
+    .branches__item:nth-child(-n+15)::before {
+        content: none;
+    }
+
+}
