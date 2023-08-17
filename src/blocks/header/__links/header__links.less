@@ -65,7 +65,9 @@
         height: 100vh;
         flex-direction: column;
         position: absolute;
-        backdrop-filter: blur(20px) contrast(80%);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        background-color: #0e212f11;
         right: 0;
         top: 60px;
         left: 0px;
@@ -74,5 +76,11 @@
         transition: opacity .5s ease-out;
     }
 
+
+    .header__link {
+        font-size: 26px;
+        color: #FFF;
+        max-width: 100%;
+    }
 
 }
