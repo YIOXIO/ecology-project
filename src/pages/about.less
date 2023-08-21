@@ -195,7 +195,7 @@
 .team__wrapper {
     display: flex;
     max-width: 1067px;
-    gap: 137px;
+    column-gap: 137px;
     margin-bottom: 73px;
 }
 
@@ -251,4 +251,26 @@
 .team__text-container {
     display: flex;
     flex-direction: column;
+}
+
+.team__button {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #54A700;
+    padding: 17px;
+    text-align: left;
+    max-width: max-content;
+    transition: box-shadow .3s ease-in;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.team__button:hover {
+    box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
 }

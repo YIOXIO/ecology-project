@@ -48,9 +48,9 @@ import './pages/about.less';
 // // Пример использования
 // updateBreadcrumb('О нас');
 
-const burgerBtn = document.querySelector('.ham');
-const burgerMenu = document.querySelector('.hamburger');
+// const burgerBtn = document.querySelector('.ham');
+// const burgerMenu = document.querySelector('.hamburger');
 
-burgerBtn.addEventListener('click', () => {
-    burgerMenu.classList.toggle('hamburger_active');
-});
+// burgerBtn.addEventListener('click', () => {
+//     burgerMenu.classList.toggle('hamburger_active');
+// });
