@@ -4,6 +4,8 @@
 @import '../blocks/root/root.less';
 @import '../variables/variables.less';
 
+@import '../blocks/mission/__border/mission__border.less';
+
 // Стили для Header
 @import '../blocks/header/header.less';
 @import '../blocks/header/__nav/header__nav.less';
@@ -16,6 +18,9 @@
 @import '../blocks/hero/__container/hero__container.less';
 @import '../blocks/hero/__title/hero__title.less';
 
+
+
+// Стили для секии Department
 
 .department__container {
     max-width: 1380px;
@@ -147,22 +152,6 @@
     box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
 }
 
-.mission__border {
-    animation: rotate 60s infinite linear;
-    width: 100%;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(360deg);
-
-    }
-}
 
 .team__avatar {
     animation: none;

@@ -7,6 +7,7 @@ module.exports = {
     entry: {
         main: './src/index.js',
         about: './src/about.js',
+        news: './src/news.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -19,7 +20,7 @@ module.exports = {
         static: path.resolve(__dirname, './dist'),
         compress: true,
         open: true,
-        port: 8080
+        port: 8082
     },
     module: {
         rules: [
@@ -73,9 +74,13 @@ module.exports = {
             filename: 'about.html',
             chunks: ['about']
         }),
+        new HtmlWebpackPlugin({
+            template: './src/news.html',
+            filename: 'news.html',
+            chunks: ['news']
+        }),
 
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ]
 };
-
