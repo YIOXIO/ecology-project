@@ -96,3 +96,4 @@ const burgerMenu = document.querySelector('.hamburger');
 burgerBtn.addEventListener('click', () => {
     burgerMenu.classList.toggle('hamburger_active');
 });
+

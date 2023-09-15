@@ -45,6 +45,13 @@
 
 @font-face {
     font-family: "Montserrat";
+    font-weight: 500;
+    src: url('../vendor/fonts/Montserrat-Medium.woff') format('woff'),
+        url('../vendor/fonts/Montserrat-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Montserrat";
     font-weight: 400;
     src: url('../vendor/fonts/Montserrat-Regular.woff') format('woff'),
         url('../vendor/fonts/Montserrat-Regular.woff2') format('woff2');
