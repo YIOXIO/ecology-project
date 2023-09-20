@@ -78,17 +78,3 @@ if (window.location.href.includes("mmkk.html")) {
 }
 
 
-
-//Write some js code
-
-
-// cityGroup.addEventListener('click', function (event) {
-//     event.preventDefault();
-//     if (circle.classList.contains('city_active'), text.classList.contains('city-name_active')) {
-//         circle.classList.remove('city_active');
-//         text.classList.remove('city-name_active');
-//     } else {
-//         circle.classList.add('city_active');
-//         text.classList.add('city-name_active');
-//     }
-// });
