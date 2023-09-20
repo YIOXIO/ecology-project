@@ -1,2 +1,2 @@
-import './pages/news.less';
+import './pages/news.css';
 

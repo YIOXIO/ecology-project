@@ -1,0 +1,112 @@
+ /* Общие стили */
+ @import '../vendor/normalize.css';
+ @import '../vendor/fonts.css';
+ @import '../blocks/root/root.css';
+
+
+
+ /* Стили для Round */
+ @import '../blocks/round/round.css';
+
+
+
+ /* Стили для Header */
+ @import '../blocks/header/header.css';
+ @import '../blocks/header/__logos/header__logos.css';
+ @import '../blocks/header/__links/header__links.css';
+ @import '../blocks/logo/logo.css';
+
+
+ /* Стили для секции Hero */
+ @import '../blocks/hero/hero.css';
+ @import '../blocks/hero/__container/hero__container.css';
+ @import '../blocks/hero/__title/hero__title.css';
+ @import '../blocks/hero/__subtitle/hero__subtitle.css';
+ @import '../blocks/hero/__wrapper/hero__wrapper.css';
+ @import '../blocks/hero/__number/hero__number.css';
+ @import '../blocks/hero/__list/hero__list.css';
+ @import '../blocks/hero/__descr/hero__descr.css';
+
+
+ /* Стили для секци Mission */
+ @import '../blocks/mission/__wrapper/mission__wrapper.css';
+ @import '../blocks/mission/__wrapper/_column/mission__wrapper_column.css';
+ @import '../blocks/mission/__title/mission__titile.css';
+ @import '../blocks/mission/__quotes/mission__quotes.css';
+ @import '../blocks/mission/__name/mission__name.css';
+ @import '../blocks/mission/__inner/mission__inner.css';
+ @import '../blocks/mission/__duty/mission__duty.css';
+ @import '../blocks/mission/__descr/mission__descr.css';
+ @import '../blocks/mission/__container/mission__container.css';
+ @import '../blocks/mission/__button/mission__button.css';
+ @import '../blocks/mission/__border/mission__border.css';
+ @import '../blocks/mission/__avatar-container/mission__avatar-container.css';
+ @import '../blocks/mission/__avatar/mission__avatar.css';
+
+
+ /* Стили для Content */
+ @import '../blocks/content/__title/content__title.css';
+ @import '../blocks/content/content.css';
+ @import '../blocks/content/__list/content__list.css';
+
+ /* Стили для Branches */
+ @import '../blocks/branches/__container/branches__container.css';
+ @import '../blocks/branches/__link/branches__link.css';
+ @import '../blocks/branches/__link/_active/branches__link_active.css';
+ @import '../blocks/branches/__list/branches__list.css';
+ @import '../blocks/branches/__title/branches__title.css';
+ @import '../blocks/branches/__round/branches__round.css';
+ @import '../blocks/branches/__number/branches__number.css';
+ @import '../blocks/branches/__arrow/branches__arrow.css';
+ @import '../blocks/branches/__content/branches__content.css';
+ @import '../blocks/branches/__content/_active/branches__content_active.css';
+ @import '../blocks/branches/__item/branches__item.css';
+
+
+ /* Стили для секция MMKK */
+ @import '../blocks/mmkk/mmkk.css';
+ @import '../blocks/mmkk/__wrapper/mmkk__wrapper.css';
+ @import '../blocks/mmkk/__container/mmkk__container.css';
+ @import '../blocks/mmkk/__title/mmkk__title.css';
+ @import '../blocks/mmkk/__logo/mmkk__logo.css';
+ @import '../blocks/mmkk/__descr/mmkk__descr.css';
+ @import '../blocks/mmkk/__button/mmkk__button.css';
+
+ /* Стили для секции Monitoring */
+ @import '../blocks/monitoring/monitoring.css';
+ @import '../blocks/monitoring/__wrapper/monitoring__wrapper.css';
+ @import '../blocks/monitoring/__container/monitoring__container.css';
+ @import '../blocks/monitoring/__title/monitoring__title.css';
+ @import '../blocks/monitoring/__descr/monitoring__descr.css';
+ @import '../blocks/monitoring/__button/monitoring__button.css';
+
+
+ /* Стили для секции Partner */
+ @import '../blocks/partner/partner.css';
+ @import '../blocks/partner/__container/partner__container.css';
+ @import '../blocks/partner/__logo/partner__logo.css';
+ @import '../blocks/partner/__title/partner__title.css';
+ @import '../blocks/partner/__list/partner__list.css';
+
+
+
+ /* Стили для секции News */
+ @import '../blocks/news/__wrapper/news__wrapper.css';
+ @import '../blocks/news/__title/news__title.css';
+ @import '../blocks/news/__list/news__list.css';
+ @import '../blocks/news/__link/news__link.css';
+ @import '../blocks/news/__image/news__iamge.css';
+ @import '../blocks/news/__descr/news__descr.css';
+ @import '../blocks/news/__date/news__date.css';
+ @import '../blocks/news/__container/news__container.css';
+ @import '../blocks/news/__card/news__card.css';
+ @import '../blocks/news/__card/_big/news__card_big.css';
+ @import '../blocks/news/__button/news__button.css';
+
+
+ /* Стили для Footer */
+ @import '../blocks/footer/footer.css';
+ @import '../blocks/footer/__list-logo/footer__list-logo.css';
+ @import '../blocks/footer/__links/footer__links.css';
+ @import '../blocks/footer/__link/footer__link.css';
+ @import '../blocks/footer/footer-media/footer-media.css';

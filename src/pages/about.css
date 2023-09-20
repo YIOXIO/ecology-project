@@ -1,0 +1,344 @@
+ /* Общие стили */
+ @import '../vendor/normalize.css';
+ @import '../vendor/fonts.css';
+ @import '../blocks/root/root.css';
+
+
+ @import '../blocks/mission/__border/mission__border.css';
+ /* Стили для Header */
+ @import '../blocks/header/header.css';
+ @import '../blocks/header/__logos/header__logos.css';
+ @import '../blocks/header/__links/header__links.css';
+ @import '../blocks/logo/logo.css';
+
+ /* Стили для секции Hero */
+ @import '../blocks/hero/hero.css';
+ @import '../blocks/hero/__container/hero__container.css';
+ @import '../blocks/hero/__title/hero__title.css';
+
+
+
+ /* Стили для секии Department */
+
+ .department__container {
+     max-width: 1380px;
+     margin: 119px auto;
+     background-color: #F4F4F4;
+     padding: 95px 97px;
+     display: flex;
+     flex-direction: column;
+     gap: 42px;
+ }
+
+ .department__title {
+     padding: 0;
+     margin: 0;
+     color: #191919;
+     font-family: 'Montserrat';
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 42px;
+     letter-spacing: 0em;
+     text-align: left;
+ }
+
+ .department__descr {
+     padding: 0;
+     margin: 0;
+     font-family: Inter;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 25px;
+     letter-spacing: 0em;
+     text-align: left;
+     color: #191919;
+ }
+
+ .department__button {
+     font-family: Montserrat;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 34px;
+     letter-spacing: 0em;
+     text-align: center;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: #54A700;
+     padding: 17px;
+     text-align: left;
+     max-width: max-content;
+     transition: box-shadow .3s ease-in;
+     box-sizing: border-box;
+
+ }
+
+ .department__button:hover {
+     box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
+ }
+
+ .department__image {
+     max-width: 1913px;
+     object-fit: none;
+     width: 100%;
+ }
+
+ .reu__container {
+     max-width: 1380px;
+     margin: 0 auto;
+     padding: 95px 97px;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+ }
+
+ .reu__title {
+     font-family: Montserrat;
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 37px;
+     letter-spacing: 0em;
+     text-align: left;
+     color: #0E212F;
+     padding: 0;
+     margin: 0;
+ }
+
+ .span-accent {
+     font-family: Inter;
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 31px;
+     letter-spacing: 0em;
+     text-align: left;
+     padding: 0;
+     margin: 0;
+     color: #191919;
+
+ }
+
+ .reu__descr {
+     font-family: Inter;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 31px;
+     letter-spacing: 0em;
+     text-align: left;
+     padding: 0;
+     margin: 0;
+     color: #191919;
+ }
+
+ .reu__button {
+     font-family: Montserrat;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 34px;
+     letter-spacing: 0em;
+     text-align: center;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: #54A700;
+     padding: 15px;
+     text-align: left;
+     max-width: max-content;
+     transition: box-shadow .3s ease-in;
+     box-sizing: border-box;
+
+ }
+
+ .reu__button:hover {
+     box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
+ }
+
+
+ .team__avatar {
+     animation: none;
+     object-fit: contain;
+     width: 85%;
+     border-radius: 50%;
+     max-width: 278px;
+     max-height: 284px;
+     position: absolute;
+     position: absolute;
+     top: 0;
+     right: 0;
+     animation: none;
+     transform: translate(-8%, 7%);
+ }
+
+ .team__avatar-container {
+     position: relative;
+     max-width: 278px;
+     max-height: 284px;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+
+
+ }
+
+ .team__container {
+     max-width: 1380px;
+     margin: 0 auto;
+ }
+
+ .team__wrapper {
+     display: flex;
+     max-width: 1067px;
+     column-gap: 137px;
+     margin-bottom: 73px;
+ }
+
+ .team__title {
+     color: #0E212F;
+     font-family: Montserrat;
+     font-size: 60px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     text-transform: uppercase;
+     padding: 0;
+     margin: 0 0 97px;
+ }
+
+ .team__name {
+     color: #0E212F;
+     font-family: Montserrat;
+     font-size: 30px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     padding: 0;
+     margin: 0 0 23px;
+ }
+
+
+ .team__duty {
+     color: #191919;
+     font-family: Inter;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 140%;
+     padding: 0;
+     margin: 0;
+     max-width: 603px;
+ }
+
+ .team__span-accent {
+     color: #191919;
+     font-family: Inter;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 25px;
+     letter-spacing: 0em;
+     text-align: left;
+     padding: 0;
+     margin: 0;
+
+ }
+
+ .team__text-container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .team__button {
+     font-family: Montserrat;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 34px;
+     letter-spacing: 0em;
+     text-align: center;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: #54A700;
+     padding: 17px;
+     text-align: left;
+     max-width: max-content;
+     transition: box-shadow .3s ease-in;
+     box-sizing: border-box;
+     text-transform: uppercase;
+ }
+
+ .team__button:hover {
+     box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
+ }
+
+ @media screen and(min-width:150px) and (max-width: 1440px) {
+     .team__container {
+         padding: 0 5vw;
+     }
+
+     .mission__border {
+         animation: rotate 60s infinite linear;
+         width: 85%;
+         max-width: 278px;
+         max-height: 284px;
+         height: 100%;
+     }
+
+     .team__avatar {
+         object-fit: contain;
+         width: 75%;
+         border-radius: 50%;
+         max-width: 278px;
+         max-height: 284px;
+         position: absolute;
+         top: 0;
+         right: 0;
+         animation: none;
+         transform: translate(-36px, 10px);
+         padding: 0;
+     }
+
+     .department__container {
+         padding: 4vh 5vw;
+     }
+
+     .reu__container {
+         padding: 4vh 5vw;
+     }
+
+     .team__title,
+     .reu__title,
+     .department__title {
+         font-size: 30px;
+     }
+ }
+
+ @media screen and (max-width: 920px) {
+     .team__wrapper {
+         column-gap: 60px;
+     }
+ }
+
+ @media screen and (min-width: 150px) and (max-width: 768px) {
+     .team__wrapper {
+         flex-direction: column;
+         align-items: center;
+         row-gap: 50px;
+     }
+
+     .department__image {
+         height: 320px;
+         object-fit: cover;
+     }
+
+     .department__container {
+         margin: 0 auto;
+     }
+
+     .department__button,
+     .reu__button {
+         line-height: 20px;
+         font-size: 16px;
+     }
+
+     .team__name {
+         font-size: 24px;
+     }
+ }

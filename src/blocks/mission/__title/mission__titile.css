@@ -1,0 +1,17 @@
+.mission__title {
+    color: #0E212F;
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 42px;
+    padding: 0;
+}
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+    .mission__title {
+        font-size: 40px;
+    }
+}

@@ -1,4 +1,4 @@
-import './pages/index.less';
+import './pages/index.css';
 
 
 // Анимация счётчика цифр при загрузке страницы

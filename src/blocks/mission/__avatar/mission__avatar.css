@@ -1,0 +1,21 @@
+.mission__avatar {
+    object-fit: contain;
+    width: 85%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: none;
+    transform: translate(-8%, 9%);
+}
+
+
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .mission__avatar {
+        width: 85%;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}

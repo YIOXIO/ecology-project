@@ -1,0 +1,25 @@
+.hero__number {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+    font-family: 'Montserrat';
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145.061%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero__number {
+        font-size: 40px;
+
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+    .hero__number {
+        font-size: 28px;
+
+    }
+}

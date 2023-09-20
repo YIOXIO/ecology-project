@@ -1,4 +1,4 @@
-import './pages/about.less';
+import './pages/about.css';
 
 // // Получаем элементы хлебных крошек
 // const breadcrumb = document.querySelector('.breadcrumb');
