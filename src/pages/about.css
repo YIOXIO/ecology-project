@@ -5,17 +5,13 @@
 
 
  @import '../blocks/mission/__border/mission__border.css';
- /* Стили для Header */
- @import '../blocks/header/header.css';
- @import '../blocks/header/__logos/header__logos.css';
- @import '../blocks/header/__links/header__links.css';
- @import '../blocks/logo/logo.css';
+
+
 
  /* Стили для секции Hero */
  @import '../blocks/hero/hero.css';
  @import '../blocks/hero/__container/hero__container.css';
  @import '../blocks/hero/__title/hero__title.css';
-
 
 
  /* Стили для секии Department */
@@ -268,7 +264,7 @@
      box-shadow: 0 0 5px rgba(84, 167, 0, 1), 0 0 7px #0074B5;
  }
 
- @media screen and(min-width:150px) and (max-width: 1440px) {
+ @media screen and (min-width:150px) and (max-width: 1440px) {
      .team__container {
          padding: 0 5vw;
      }

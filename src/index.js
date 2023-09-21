@@ -1,5 +1,12 @@
 import './pages/index.css';
 
+const burgerBtn = document.querySelector('.ham');
+const burgerMenu = document.querySelector('.hamburger');
+
+burgerBtn.addEventListener('click', () => {
+    burgerMenu.classList.toggle('hamburger_active');
+});
+
 
 // Анимация счётчика цифр при загрузке страницы
 window.onload = function () {
@@ -91,12 +98,5 @@ document.addEventListener('DOMContentLoaded', () => {
         tabsContent.forEach(el => { el.classList.remove('branches__content_active') });
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('branches__content_active');
     };
-});
-
-const burgerBtn = document.querySelector('.ham');
-const burgerMenu = document.querySelector('.hamburger');
-
-burgerBtn.addEventListener('click', () => {
-    burgerMenu.classList.toggle('hamburger_active');
 });
 
