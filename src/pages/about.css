@@ -338,3 +338,96 @@
          font-size: 24px;
      }
  }
+
+
+
+ .form__container {
+     max-width: 1380px;
+     background-image: url('../images/logos/logo_MMKK_white_vertical.png');
+     background-color: #D9D9D9;
+     background-position: left;
+     background-repeat: no-repeat;
+     width: 100%;
+     margin: 120px auto;
+     display: flex;
+     flex-direction: column;
+     padding: 72px 114px;
+     gap: 43px;
+     box-sizing: border-box;
+ }
+
+ .form__list {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     background: transparent;
+     display: flex;
+     gap: 23px;
+     justify-content: space-between;
+ }
+
+ .form__item {
+     border: 1px solid black;
+     box-sizing: border-box;
+     max-width: 323px;
+     width: 100%;
+ }
+
+ .form__item>input {}
+
+ .form__input {
+     padding: 28px 25px 28px 25px;
+     background: transparent;
+     outline: none;
+     border: none;
+     width: 88%;
+ }
+
+ .form__item_mid {
+     max-width: 461px;
+     width: 100%;
+ }
+
+ .form__item_long {
+     max-width: 669px;
+     width: 100%;
+ }
+
+ .form__wrapper {
+     display: flex;
+     align-items: center;
+ }
+
+ .form__policy {
+     color: #444;
+     font-family: 'Inter';
+     font-size: 11px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 145%;
+     max-width: 250px;
+     padding: 0;
+     margin: 0;
+ }
+
+ .form__policy>a {
+     opacity: 0.5;
+     text-decoration-line: underline;
+ }
+
+ .form__submit {
+     color: #FFF;
+     text-align: center;
+     font-family: Montserrat;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 170%;
+     background-color: #54A700;
+     text-transform: uppercase;
+     padding: 17px 22px 14px 23px;
+     max-width: 275px;
+     width: 100%;
+     border: 0;
+     box-sizing: border-box;
+ }

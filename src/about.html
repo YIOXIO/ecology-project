@@ -8,57 +8,6 @@
 </head>
 
 <body class="root">
-    <header class="header">
-        <ul class="header__logos">
-            <li>
-                <a href="#">
-                    <img class="logo" src="<%=require('./images/logos/reu_logo.webp')%>" alt="Логотип РЭУ">
-                </a>
-
-            </li>
-            <li>
-                <a href="#"> <img class="logo" src="<%=require('./images/logos/uct.webp')%>"
-                        alt="Логотип Управления цифровой трансформации">
-                </a>
-
-            </li>
-            <li>
-                <a href="#"> <img class="logo" src="<%=require('./images/logos/mmkk_logo.webp')%>"
-                        alt="Логотип Международный молодежный климатический клуб">
-                </a>
-            </li>
-        </ul>
-        <nav role="navigation" class="header__nav">
-
-            <ul class="header__links hamburger">
-                <li>
-                    <a href="index.html" class="header__link">главная</a>
-                </li>
-                <li>
-                    <a href="about.html" class="header__link">о нас</a>
-                </li>
-                <li>
-                    <a href="mmkk.html" class="header__link">ммкк</a>
-                </li>
-                <li>
-                    <a href="#" class="header__link">мониторинг</a>
-                </li>
-                <li>
-                    <a href="#" class="header__link">партнеры</a>
-                </li>
-                <li>
-                    <a href="news.html" class="header__link">новости</a>
-                </li>
-            </ul>
-        </nav>
-        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-            <path class="line top"
-                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-            <path class="line middle" d="m 30,50 h 40" />
-            <path class="line bottom"
-                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg>
-    </header>
     <section class="hero">
         <div class="hero__container">
             <h1 class="hero__title">О нас</h1>
@@ -149,6 +98,55 @@
                 </div>
             </div>
             <a class="team__button" href="#">больше участников</a>
+        </div>
+    </section>
+    <section class="form">
+        <div class="form__container">
+            <ul class="form__list">
+                <li class="form__item form__item_mid">
+                    <input class="form__input" placeholder="Фамилия*" required type="text">
+                </li>
+                <li class="form__item">
+                    <input class="form__input" placeholder="Имя*" required type="text">
+                </li>
+                <li class="form__item">
+                    <input class="form__input" placeholder="Отчество" type="text">
+                </li>
+            </ul>
+            <ul class="form__list">
+                <li class="form__item form__item_mid">
+                    <input class="form__input" placeholder="E-mail*" required type="email">
+                </li>
+                <li class="form__item">
+                    <input class="form__input" placeholder="Телефон*" required type="numberic">
+                </li>
+                <li class="form__item">
+                    <input class="form__input" placeholder="Возраст*" type="text">
+                </li>
+            </ul>
+            <ul class="form__list">
+                <li class="form__item form__item_mid">
+                    <input class="form__input" placeholder="Вид деятельности (ученик/работник)*" type="text">
+                </li>
+                <li class="form__item form__item_long">
+                    <input class="form__input" placeholder="Место учебы/работы*" required type="numberic">
+                </li>
+            </ul>
+            <ul class="form__list">
+                <li class="form__item form__item_mid">
+                    <input class="form__input" placeholder="Вид деятельности (ученик/работник)*" type="text">
+                </li>
+                <li class="form__list">
+                    <div class="form__wrapper">
+                        <p class="form__policy">
+                            Нажимая на кнопку “Стать участником” вы соглашаетесь с <a href="">политикой обработки
+                                персональных данных </a>
+                        </p>
+
+                        <button class="form__submit">стать участником</button>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 </body>
