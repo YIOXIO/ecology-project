@@ -1,18 +1,17 @@
 .news__list {
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(181px, 8fr));
-    grid-template-rows: 2fr;
-    grid-auto-flow: dense;
+    padding: 0;
+    list-style-type: none;
+
     gap: 20px;
     justify-items: center;
 }
 
 @media screen and (min-width: 120px) and (max-width: 767px) {
     .news__list {
-        display: flex;
         flex-direction: column;
     }
 }

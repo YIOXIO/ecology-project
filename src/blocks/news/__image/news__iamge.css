@@ -1,4 +1,7 @@
 .news__image {
     margin-bottom: 17px;
+    max-width: 680px;
+    max-height: 350px;
     width: 100%;
+    object-fit: cover;
 }

@@ -100,3 +100,48 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 });
 
+const button = document.querySelector('.news__button');
+button.addEventListener('click', function () {
+    const template = document.querySelector('.template');
+    const newCard = document.importNode(template.content, true);
+    const firstCard = document.querySelector('.news__card.news__card_big');
+    const secondCard = document.querySelector('.news__card.news__card_big:nth-child(2)');
+    const newsList = document.querySelector('.news__list');
+    newsList.insertBefore(newCard, firstCard);
+    secondCard.classList.remove('news__card_big');
+    const lastCard = newsList.lastElementChild;
+    newsList.removeChild(lastCard);
+});
+
+
+// function add_new_card_on_post_save($post_id) {
+//     // Проверяем, что это новая запись
+//     if (wp_is_post_revision($post_id) || wp_is_post_autosave($post_id)) {
+//         return;
+//     }
+
+//     // Получаем необходимые элементы
+//     $newCard = array(
+//         'class' => 'news__card news__card_big',
+//         'content' => '',
+//     );
+
+//     $firstCard = get_field('news__card.news__card_big', $post_id)[0];
+//     $secondCard = get_field('news__card.news__card_big:nth-child(2)', $post_id)[0];
+//     $newsList = get_field('.news__list', $post_id);
+
+//     // Вставляем новую карточку перед первой карточкой
+//     array_splice($newsList, array_search($firstCard, $newsList), 0, $newCard);
+
+//     // Удаляем класс news__card_big у второй карточки
+//     $secondCardKey = array_search($secondCard, $newsList);
+//     $newsList[$secondCardKey]['class'] = str_replace('news__card_big', '', $newsList[$secondCardKey]['class']);
+
+//     // Удаляем последнюю карточку из списка
+//     array_pop($newsList);
+
+//     // Обновляем поле с новым списком карточек
+//     update_field('.news__list', $newsList, $post_id);
+// }
+
+// add_action('save_post', 'add_new_card_on_post_save');

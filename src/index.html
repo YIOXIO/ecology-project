@@ -612,7 +612,7 @@
             <div class="news__wrapper">
                 <div class="news__container">
                     <h2 class="news__title">Новости</h2>
-                    <a href="#" class="news__button">Подробнее</a>
+                    <button href="#" class="news__button">Подробнее</button>
                 </div>
                 <ul class="news__list">
                     <li class="news__card news__card_big">
@@ -734,6 +734,16 @@
             </ul>
         </nav>
     </footer>
+    <template class="template">
+        <li class="news__card news__card_big">
+            <a class="news__link" href="#">
+                <img src="<%=require('./images/prud.jpg')%>" alt="Обложка для новости об экологии" class="news__image">
+                <p class="news__date">27.09.24</p>
+                <p class="news__descr">Экология для молодёжи: Плехановский университет на X Невском
+                    международном экологическом конгрессе</p>
+            </a>
+        </li>
+    </template>
 </body>
 
 </html>

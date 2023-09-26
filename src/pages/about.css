@@ -366,29 +366,27 @@
      justify-content: space-between;
  }
 
- .form__item {
-     border: 1px solid black;
-     box-sizing: border-box;
-     max-width: 323px;
+
+ .form__list>li {
      width: 100%;
  }
-
- .form__item>input {}
 
  .form__input {
      padding: 28px 25px 28px 25px;
      background: transparent;
-     outline: none;
-     border: none;
-     width: 88%;
+     border: 1px solid black;
+     box-sizing: border-box;
+     max-width: 323px;
+     width: 100%;
+
  }
 
- .form__item_mid {
+ .form__input_mid {
      max-width: 461px;
      width: 100%;
  }
 
- .form__item_long {
+ .form__input_long {
      max-width: 669px;
      width: 100%;
  }

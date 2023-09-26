@@ -1,5 +1,5 @@
 .news__card {
     display: flex;
     flex-direction: column;
-
+    max-width: 213px;
 }

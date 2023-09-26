@@ -9,6 +9,7 @@ module.exports = {
         about: './src/about.js',
         news: './src/news.js',
         mmkk: './src/mmkk.js',
+        post: './src/post.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -76,6 +77,11 @@ module.exports = {
             template: './src/mmkk.html',
             filename: 'mmkk.html',
             chunks: ['mmkk']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/post.html',
+            filename: 'post.html',
+            chunks: ['post']
         }),
 
         new CleanWebpackPlugin(),

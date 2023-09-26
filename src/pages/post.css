@@ -1,0 +1,58 @@
+ /* Общие стили */
+ @import '../vendor/normalize.css';
+ @import '../vendor/fonts.css';
+ @import '../blocks/root/root.css';
+
+
+ .post__container {
+     margin: 0 auto;
+     max-width: 1167px;
+ }
+
+ .post__title {
+     color: #191919;
+     font-family: 'Montserrat';
+     font-size: 50px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     margin: 0 auto 50px 373px;
+     padding: 0;
+     max-width: 1380px;
+ }
+
+ .post__gallery {
+     margin-bottom: 39px;
+ }
+
+ .post__date {
+     color: #9B9B9B;
+     font-family: 'Inter';
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+     padding: 0;
+     margin: 0 0 33px;
+ }
+
+ .post__text {
+     color: #191919;
+     font-family: 'Inter';
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 135%;
+     margin: 0;
+     padding: 0;
+     max-width: 1125px;
+ }
+
+ .post__span {
+     color: #191919;
+     font-family: 'Inter';
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 135%;
+ }
