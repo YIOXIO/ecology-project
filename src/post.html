@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Пост</title>
 </head>
 
@@ -14,14 +15,104 @@
                 Экология для молодёжи: Плехановский университет на X Невском международном экологическом конгрессе
             </h1>
             <div class="post__container">
+                <div class="slider post__container">
+                    <div class="container">
+                        <div class="slider__flex">
+                            <div class="slider__col">
 
-                <div class="post__gallery">
-                    <img src="<%=require('./images/image1.png')%>" alt="">
+                                <div class="slider__prev"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="13"
+                                        viewBox="0 0 22 13" fill="none">
+                                        <path d="M21 12L11 2L1 12" stroke="#191919" stroke-width="2" />
+                                    </svg></div>
+                                <div class="slider__thumbs">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="slider__image"><img
+                                                        src="https://image.winudf.com/v2/image/Y29tLnNhbmdhbS5zdG9uZS53YWxscGFwZXJzX3NjcmVlbnNob3RzXzFfNGViOTU2Yg/screen-1.jpg?fakeurl=1&type=.jpg"
+                                                        alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image"><img
+                                                        src="https://i.pinimg.com/originals/73/17/5d/73175dc9a0fd734a6b68c966617e1445.jpg"
+                                                        alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image"><img
+                                                        src="https://wallpapers.com/images/featured-full/1440p-1zgeq4ny98yzpzkp.jpg"
+                                                        alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image"><img
+                                                        src="https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-15-inch-wallpapers/Red-Forest-2880x1800/1783-8.jpg"
+                                                        alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image"><img
+                                                        src="https://i.pinimg.com/originals/30/a8/d6/30a8d6a841de0613506464dc432ead31.jpg"
+                                                        alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__next"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="13"
+                                        viewBox="0 0 22 13" fill="none">
+                                        <path d="M1 1L11 11L21 1" stroke="#191919" stroke-width="2" />
+                                    </svg></div>
+
+                            </div>
+
+                            <div class="slider__images">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slider__image"><img
+                                                    src="https://image.winudf.com/v2/image/Y29tLnNhbmdhbS5zdG9uZS53YWxscGFwZXJzX3NjcmVlbnNob3RzXzFfNGViOTU2Yg/screen-1.jpg?fakeurl=1&type=.jpg"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image"><img
+                                                    src="https://i.pinimg.com/originals/73/17/5d/73175dc9a0fd734a6b68c966617e1445.jpg"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image"><img
+                                                    src="https://wallpapers.com/images/featured-full/1440p-1zgeq4ny98yzpzkp.jpg"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image"><img
+                                                    src="https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-15-inch-wallpapers/Red-Forest-2880x1800/1783-8.jpg"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image"><img
+                                                    src="https://i.pinimg.com/originals/30/a8/d6/30a8d6a841de0613506464dc432ead31.jpg"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
                 <p class="post__date">24 мая 2023</p>
-                <p class="post__text"><span class="post__span">Плехановский университет организовал панельную дискуссию
-                        «Экологическая повестка в
-                        вузах: задачи и перспективы»</span> на X Невском международном экологическом конгрессе.
+                <p class="post__text">
+                    Плехановский университет организовал панельную дискуссию
+                    «Экологическая повестка в
+                    вузах: задачи и перспективы»на X Невском международном экологическом конгрессе.
                     Представители власти,
                     образовательного, научного и бизнес-сообществ рассмотрели возможности экологического просвещения в
                     университетах.
@@ -82,8 +173,154 @@
                     «Эковолонтёрство на страже природы».</p>
             </div>
 
+            </div>
+
+            <ul class="news__list post__list">
+                <li class="news__card">
+                    <a class="news__link" href="#">
+                        <img src="<%=require('./images/image3.png')%>" alt="Обложка для новости об экологии"
+                            class="news__image">
+                        <p class="news__date">14.02.23</p>
+                        <p class="news__descr">Учёные РЭУ им. Г.В. Плеханова представят проект «зелёной»
+                            экономики в
+                            Казахстане</p>
+                    </a>
+                </li>
+                <li class="news__card">
+                    <a class="news__link" href="#">
+                        <img src="<%=require('./images/image4.png')%>" alt="Обложка для новости об экологии"
+                            class="news__image">
+                        <p class="news__date">04.02.23</p>
+                        <p class="news__descr">Разумное потребление: Eco Fashion Day в Плехановке</p>
+                    </a>
+                </li>
+                <li class="news__card">
+                    <a class="news__link" href="#">
+                        <img src="<%=require('./images/image5.png')%>" alt="Обложка для новости об экологии"
+                            class="news__image">
+                        <p class="news__date">12.01.23</p>
+                        <p class="news__descr">Устойчивое развитие Арктики: ориентация на коренные народы</p>
+                    </a>
+                </li>
+                <li class="news__card">
+                    <a class="news__link" href="#">
+                        <img src="<%=require('./images/image6.png')%>" alt="Обложка для новости об экологии"
+                            class="news__image">
+                        <p class="news__date">22.12.22</p>
+                        <p class="news__descr">Ядерное оружие и климат – главное для международного сообщества
+                        </p>
+                    </a>
+                </li>
+                <li class="news__card">
+                    <a class="news__link" href="#">
+                        <img src="<%=require('./images/image7.png')%>" alt="Обложка для новости об экологии"
+                            class="news__image">
+                        <p class="news__date">20.12.22</p>
+                        <p class="news__descr">Денис Буцаев назначен заведующим кафедрой РЭО в РЭУ им. Г.В.
+                            Плеханова</p>
+                    </a>
+                </li>
+                <li class="news__card">
+                    <a class="news__link" href="#">
+                        <img src="<%=require('./images/image8.png')%>" alt="Обложка для новости об экологии"
+                            class="news__image">
+                        <p class="news__date">19.12.22</p>
+                        <p class="news__descr">Зелёный университет: экология в РЭУ им. Г.В. Плеханова</p>
+                    </a>
+                </li>
+            </ul>
+            </div>
         </section>
+        <!-- <section class="slider">
+            <div class="container">
+                <div class="slider__flex">
+                    <div class="slider__col">
+
+                        <div class="slider__prev">Prev</div> 
+
+                        <div class="slider__thumbs">
+                            <div class="swiper-container"> 
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider__image"><img
+                                                src="https://image.winudf.com/v2/image/Y29tLnNhbmdhbS5zdG9uZS53YWxscGFwZXJzX3NjcmVlbnNob3RzXzFfNGViOTU2Yg/screen-1.jpg?fakeurl=1&type=.jpg"
+                                                alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__image"><img
+                                                src="https://i.pinimg.com/originals/73/17/5d/73175dc9a0fd734a6b68c966617e1445.jpg"
+                                                alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__image"><img
+                                                src="https://wallpapers.com/images/featured-full/1440p-1zgeq4ny98yzpzkp.jpg"
+                                                alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__image"><img
+                                                src="https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-15-inch-wallpapers/Red-Forest-2880x1800/1783-8.jpg"
+                                                alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__image"><img
+                                                src="https://i.pinimg.com/originals/30/a8/d6/30a8d6a841de0613506464dc432ead31.jpg"
+                                                alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__next">Next</div> 
+
+                    </div>
+
+                    <div class="slider__images">
+                        <div class="swiper-container"> 
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img
+                                            src="https://image.winudf.com/v2/image/Y29tLnNhbmdhbS5zdG9uZS53YWxscGFwZXJzX3NjcmVlbnNob3RzXzFfNGViOTU2Yg/screen-1.jpg?fakeurl=1&type=.jpg"
+                                            alt="" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img
+                                            src="https://i.pinimg.com/originals/73/17/5d/73175dc9a0fd734a6b68c966617e1445.jpg"
+                                            alt="" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img
+                                            src="https://wallpapers.com/images/featured-full/1440p-1zgeq4ny98yzpzkp.jpg"
+                                            alt="" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img
+                                            src="https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-15-inch-wallpapers/Red-Forest-2880x1800/1783-8.jpg"
+                                            alt="" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__image"><img
+                                            src="https://i.pinimg.com/originals/30/a8/d6/30a8d6a841de0613506464dc432ead31.jpg"
+                                            alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
     </main>
+
 </body>
 
 </html>
