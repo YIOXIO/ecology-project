@@ -1,0 +1,34 @@
+.branches__round {
+    max-width: 573px;
+    height: 573px;
+    flex-shrink: 0;
+    border-radius: 573px;
+    border: 1px dashed rgba(84, 167, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .branches__round {
+        max-width: 400px;
+        height: 400px;
+    }
+}
+
+
+
+@media screen and (min-width: 120px) and (max-width: 768px) {
+    .branches__round {
+        border: none;
+        position: inherit;
+        right: 0;
+        top: 0;
+    }
+
+}

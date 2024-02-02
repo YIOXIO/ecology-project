@@ -1,0 +1,43 @@
+.branches__number {
+    color: #0E212F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 107.9%;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    rotate: none;
+}
+
+.branches__number::after {
+    content: '/ 15';
+    color: #0E212F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144.9%;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .branches__number {
+        font-size: 80px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 120px) and (max-width: 768px) {
+    .branches__number {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.mission__container {
+    max-width: 1380px;
+    margin: 120px auto 143px;
+    padding: 0 5vw;
+}
+
+.mission__container:nth-last-child(1) {
+    padding: 0;
+
+}

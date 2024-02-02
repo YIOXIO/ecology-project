@@ -1,0 +1,5 @@
+.mission__wrapper_column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}

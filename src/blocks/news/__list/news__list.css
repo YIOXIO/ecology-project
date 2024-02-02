@@ -1,0 +1,17 @@
+.news__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    gap: 20px;
+    justify-items: center;
+}
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+    .news__list {
+        flex-direction: column;
+    }
+}

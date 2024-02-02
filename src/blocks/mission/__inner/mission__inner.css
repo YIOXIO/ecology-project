@@ -1,0 +1,31 @@
+.mission__inner {
+    box-sizing: border-box;
+    padding: 127px 4vw 0;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission__inner:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.mission__inner:nth-child(3) {
+    padding-bottom: 130px;
+}
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+    .mission__inner {
+        padding: 5vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 70px;
+        flex-direction: column-reverse;
+    }
+
+    .mission__inner:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+}

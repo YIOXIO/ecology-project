@@ -1,0 +1,11 @@
+.mission__wrapper {
+    display: flex;
+    gap: 75px;
+    align-items: flex-start;
+}
+
+@media screen and (min-width:0px) and (max-width:1024px) {
+    .mission__wrapper {
+        flex-wrap: wrap;
+    }
+}

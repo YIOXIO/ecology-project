@@ -1,0 +1,10 @@
+.monitoring {
+    background-color: #F4F4F4;
+    padding: 5vw;
+}
+
+@media screen and (min-width: 120px) and (max-width: 767px) {
+    .monitoring {
+        padding: 15vw 5vw;
+    }
+}

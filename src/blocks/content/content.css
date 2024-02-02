@@ -1,0 +1,22 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    padding-left: 100px;
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        padding-left: 50px;
+    }
+}
+
+
+
+@media screen and (min-width: 120px) and (max-width: 768px) {
+    .content {
+        padding: 0;
+    }
+}

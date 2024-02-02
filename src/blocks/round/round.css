@@ -1,0 +1,44 @@
+.round {
+    max-width: 446px;
+    max-height: 446px;
+    box-shadow: 26px 0px 38px 0px rgba(0, 0, 0, 0.25), 23px 0px 60px 0px rgba(0, 0, 0, 0.15) inset, -4px 0px 22px 0px rgba(127, 176, 78, 0.99);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 500px;
+    align-items: center;
+    transition: all .3s ease-in;
+    animation: pulse 4s linear infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 26px 0px 38px 0px rgba(0, 0, 0, 0.25), 23px 0px 60px 0px rgba(0, 0, 0, 0.15) inset, -4px 0px 22px 0px rgba(127, 176, 78, 0);
+    }
+
+    50% {
+        box-shadow: 26px 0px 38px 0px rgba(0, 0, 0, 0.25), 23px 0px 60px 0px rgba(0, 0, 0, 0.15) inset, -4px 0px 22px 0px rgba(127, 176, 78, 0.99);
+    }
+
+    100% {
+        box-shadow: 26px 0px 38px 0px rgba(0, 0, 0, 0.25), 23px 0px 60px 0px rgba(0, 0, 0, 0.15) inset, -4px 0px 22px 0px rgba(127, 176, 78, 0);
+    }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .round {
+        max-width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 120px) and (max-width: 768px) {
+    .round {
+        display: none;
+    }
+}

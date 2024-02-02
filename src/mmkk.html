@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ММКК</title>
+</head>
+
+<body class="root">
+    <header class="header">
+        <ul class="header__logos">
+            <li>
+                <a href="#">
+                    <img class="logo" src="<%=require('./images/logos/reu_logo.webp')%>" alt="Логотип РЭУ">
+                </a>
+
+            </li>
+            <li>
+                <a href="#"> <img class="logo" src="<%=require('./images/logos/uct.webp')%>"
+                        alt="Логотип Управления цифровой трансформации">
+                </a>
+
+            </li>
+            <li>
+                <a href="#"> <img class="logo" src="<%=require('./images/logos/mmkk_logo.webp')%>"
+                        alt="Логотип Международный молодежный климатический клуб">
+                </a>
+            </li>
+        </ul>
+        <nav role="navigation" class="header__nav">
+
+            <ul class="header__links hamburger">
+                <li>
+                    <a href="index.html" class="header__link">главная</a>
+                </li>
+                <li>
+                    <a href="about.html" class="header__link">о нас</a>
+                </li>
+                <li>
+                    <a href="mmkk.html" class="header__link">ммкк</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">мониторинг</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">партнеры</a>
+                </li>
+                <li>
+                    <a href="news.html" class="header__link">новости</a>
+                </li>
+            </ul>
+        </nav>
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+    </header>
+    <main class="page">
+        <section class="mmkk-o">
+            <div class="mmkk-o__container-map">
+                <h1 class="mmkk-o__title">международный молодежный климатический клуб</h1>
+                <div class="mmkk-o__inner">
+                    <img class="mmkk-o__logo" src="<%=require('./images/logos/mmkk_logo_color.png')%>" alt="">
+                    <ul class="mmkk-o__numbers">
+                        <li>
+                            <span class="mmkk-o__number">4</span>
+                            <p class="mmkk-o__text">страны</p>
+                        </li>
+                        <li>
+                            <span class="mmkk-o__number">15
+                            </span>
+                            <p class="mmkk-o__text">городов</p>
+                        </li>
+                        <li>
+                            <span class="mmkk-o__number">160
+                            </span>
+                            <p class="mmkk-o__text">активистов</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mmkk-o__container-map mmkk-o-tabs">
+                <img class="mmkk-o__sheet-map" src="<%=require('./images/map.png')%>" alt="">
+                <svg class="mmkk-o-map" id="rus-map" width="1167" height="100%" viewBox="0 0 1167 1340" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">                  
+                  
+                    <g id="minsk" class="city-group">
+                        <circle data-tabs-path="minsk" class="city mmkk-o__link" cx="56.1344" cy="442.173" r="4.18911">
+                        </circle>
+                        <text data-tabs-path="minsk" x="34.19" y="457" class="city-name mmkk-o__link">Минск</text>
+                    </g>
+                    <g id="bryansk" class="city-group">
+                        <circle data-tabs-path="bryansk" class="city mmkk-o__link" cx="105.568" cy="425.416" r="4.18911"
+                            fill="#191919">
+                        </circle>
+                        <text data-tabs-path="bryansk" x="82" y="441" class="city-name mmkk-o__link">Брянск</text>
+                    </g>
+                    <g id="sevastopol" class=" city-group">
+                        <circle data-tabs-path="sevastopol" class="city mmkk-o__link" cx="93.0016" cy="526.793"
+                            r="4.18911" fill="#191919">
+                        </circle>
+                        <text data-tabs-path="sevastopol" x="50.7" y="543.7"
+                            class="city-name mmkk-o__link">Севастополь</text>
+                    </g>
+                    <g id="krasnodar" class=" city-group">
+                        <circle data-tabs-path="krasnodar" class="city mmkk-o__link" cx="143.267" cy="524.279"
+                            r="4.18911" fill="#191919">
+                        </circle>
+                        <text data-tabs-path="krasnodar" x="153.4" y="528"
+                            class="city-name mmkk-o__link">Краснодар</text>
+                    </g>
+                    <g id="pyatigorsk" class=" city-group">
+                        <circle data-tabs-path="pyatigorsk" class="city mmkk-o__link" cx="153.322" cy="544.387"
+                            r="4.18911" fill="#191919">
+                        </circle>
+                        <text data-tabs-path="pyatigorsk" x="118.5" y="562"
+                            class="city-name mmkk-o__link">Пятигорск</text>
+                    </g>
+                    <g id="erevan" class=" city-group">
+                        <circle data-tabs-path="erevan" class="city mmkk-o__link" cx="175.107" cy="574.548" r="4.18911"
+                            fill="#currentColor">
+                        </circle>
+                        <text data-tabs-path="erevan" x="150.1344" y="591.489"
+                            class="city-name mmkk-o__link">Ереван</text>
+                    </g>
+                    <g id="tashkent" class=" city-group">
+
+                        <circle data-tabs-path="tashkent" class="city mmkk-o__link" cx="330.045" cy="576.441"
+                            r="4.18911" fill="#C64815" />
+                        <text data-tabs-path="tashkent" x="303.4344" y="592.7"
+                            class="city-name mmkk-o__link">Ташкент</text>
+                    </g>
+                    <g id="ulan-bator" class=" city-group">
+                        <circle data-tabs-path="ulan-bator" class="city mmkk-o__link" cx="574.341" cy="502.036"
+                            r="4.18911" fill="#C64815" />
+                        <text data-tabs-path="ulan-bator" x="535.1344" y="520"
+                            class="city-name mmkk-o__link">Улан-Батор</text>
+                    </g>
+                    <g id="voronej" class=" city-group">
+                        <circle data-tabs-path="voronej" class="city mmkk-o__link" cx="142.431" cy="439.659" r="4.18911"
+                            fill="#191919" />
+                        <text data-tabs-path="voronej" x="112.1344" y="457"
+                            class="city-name mmkk-o__link">Воронеж</text>
+                    </g>
+                    <g id="tula" class=" city-group">
+                        <circle data-tabs-path="tula" class="city mmkk-o__link" cx="138.244" cy="422.065" r="4.18911"
+                            fill="#191919" />
+                        <text data-tabs-path="tula" x="147.9" y="426" class="city-name mmkk-o__link">Тула</text>
+
+                    </g>
+                    <g id="ivanovo" class=" city-group">
+                        <circle data-tabs-path="ivanovo" class="city mmkk-o__link" cx="189.349" cy="355.877" r="4.18911"
+                            fill="#191919" />
+                        <text data-tabs-path="ivanovo" x="160.1344" y="373"
+                            class="city-name mmkk-o__link">Иваново</text>
+                    </g>
+                    <g id="moskva" class=" city-group">
+                        <circle data-tabs-path="moskva" class="city mmkk-o__link mmkk-o__link_active" cx="140.189"
+                            cy="388.833" r="4.18911" fill="#191919" />
+                        <text data-tabs-path="moskva" x="118.1344" y="406" class="city-name mmkk-o__link ">Москва</text>
+                    </g>
+                    <g id="perm" class=" city-group">
+                        <circle data-tabs-path="perm" class="city mmkk-o__link" cx="312.509" cy="337.445" r="4.18911"
+                            fill="#191919" />
+                        <text data-tabs-path="perm" x="291.7" y="355.7" class="city-name mmkk-o__link">Пермь</text>
+                    </g>
+                    <g id="orenburg" class=" city-group">
+                        <circle data-tabs-path="orenburg" class="city mmkk-o__link" cx="291.564" cy="423.74" r="4.18911"
+                            fill="#191919" />
+                        <text data-tabs-path="orenburg" x="260.1344" y="442"
+                            class="city-name mmkk-o__link">Оренбург</text>
+                    </g>
+                    <g id="volgograd" class=" city-group">
+                        <circle data-tabs-path="volgograd" class="city mmkk-o__link " cx="191.861" cy="440.497"
+                            r="4.18911" fill="#191919" />
+                        <text data-tabs-path="volgograd" x="179.5" y="458.9"
+                            class="city-name mmkk-o__link">Волгоград</text>
+                    </g>
+                    <g id="smolensk" class=" city-group ">
+                        <circle data-tabs-path="smolensk" class=" city mmkk-o__link" cx="87.1344" cy="391.903"
+                            r="4.18911" fill="#191919" />
+                        <text data-tabs-path="smolensk" x="44.1344" y="408"
+                            class="city-name mmkk-o__link">Смоленск</text>
+                    </g>
+                    <g id="hanoi" class="city-group">
+                        <circle data-tabs-path="hanoi" class="city mmkk-o__link" cx="585" cy="725" r="4.18911" fill="#191919"></circle>
+                        <text data-tabs-path="hanoi" x="564" y="742" class="city-name mmkk-o__link">Ханой</text>
+                    </g>
+                    <g id="vietnyan" class="city-group">
+                        <circle data-tabs-path="vietnyan" class="city mmkk-o__link" cx="564" cy="749" r="4.18911" fill="#191919"></circle>
+                        <text data-tabs-path="vietnyan" x="534" y="768" class="city-name mmkk-o__link">Вьентьян</text>
+                    </g>
+                    <g id="jakarta" class="city-group">
+                        <circle data-tabs-path="jakarta" class="city mmkk-o__link" cx="595" cy="919" r="4.18911" fill="#191919"></circle>
+                        <text data-tabs-path="jakarta" x="563" y="937" class="city-name mmkk-o__link">Джакарта</text>
+                    </g>
+                    <g id="asuncion" class="city-group">
+                        <circle data-tabs-path="asuncion" class="city mmkk-o__link" cx="34" cy="1043" r="4.18911" fill="#191919"></circle>
+                        <text data-tabs-path="asuncion" x="3" y="1062" class="city-name mmkk-o__link">Асунсьон</text>
+                    </g>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="pointer"  width="25px" height="35px" class="logo-pointer" y="345.833" x="129.189" viewBox="0 0 25 35">
+                        <g clip-path="url(#a)">
+                          <path fill="url(#b)" d="M2.81213 16.7921c.01489.0149.01489.0298.02978.0298 1.65314 1.7276 3.4701 3.2913 5.04878 5.0785 1.65313 1.8617 3.17221 3.9467 3.90201 6.3445.4021 1.3255.4766 2.651.2978 4.0211-.0744.4915-.1638.983-.2531 1.4596-.0894.4468.5212.6851.7744.2978 1.0425-1.6084 2.5765-4.036 3.351-5.4657.5808-1.0872 1.1169-2.1893 1.6382-3.2914.4915-1.0426.8638-2.1297.9234-3.2914.0893-1.9361-.7-3.8424-1.9659-5.2871-1.1319-1.2957-2.5467-2.2637-3.9914-3.202-2.82967-1.8616-6.25509-4.18497-6.91038-7.77422-.10425-.58083-.13404-1.14677-.11915-1.69781.02979-.61062-.67019-.95316-1.13188-.58084-1.14677.93827-2.14461 2.11483-2.90416 3.45521C-.315428 10.1051.250509 14.1411 2.81213 16.7921Z"/>
+                          <path fill="url(#c)" d="M5.67161 5.7116c-.10425-.58083-.13404-1.14677-.11915-1.69781.0149-.41701-.29786-.69998-.6404-.72977-.58083.92338-1.0872 1.87654-1.45953 2.87438-.13404.35743-.25318.72976-.35743 1.10209-.04468.16382-.08936.34254-.11915.52126-.04468.25318-.02978.16382-.05957.32765-.07446.72976-.04468 1.26591.11914 1.84674.10426.37236.13404.46166.34254.80426.08936.1489.17873.2829.28298.4319.13404.1936.08935.134.19361.2532.44679.5212.93826.9978 1.47442 1.4446.96805.7893 2.30843 1.5936 3.49988 2.3084 1.31055.7894 2.62115 1.5936 3.82755 2.5616 1.117.8936 2.1297 1.9808 2.7701 3.2616.8042 1.5787.9979 3.2467.7149 4.9892-.4766 2.7702-1.9808 5.168-3.2765 7.6402 1.0276-1.5786 2.3829-3.753 3.0978-5.0785.5808-1.0872 1.1169-2.1893 1.6382-3.3063.4915-1.0425.8638-2.1297.9234-3.2914.0893-1.9361-.7-3.8424-1.9659-5.2871-1.1319-1.2957-2.5467-2.2637-3.9914-3.202-2.79988-1.8616-6.2253-4.18495-6.89549-7.7742Z"/>
+                          <path fill="url(#d)" d="M16.4524 13.3967c1.6978 1.3552 3.0382 3.1126 3.768 5.0636.2978.7894 1.3999.7894 1.6978.0149.6851-1.7723 1.117-3.4105 1.117-4.7658 0-7.07423-5.2275-12.808083-11.6614-12.808083-.3127 0-.6106.01489-.9233.044677-1.19149.104256-2.18933.968056-2.4723 2.129716v.0149c-.28297 1.20634-.16383 2.45736.49147 3.61903 1.75743 3.09777 5.31683 4.57216 7.98273 6.68706Z"/>
+                          <path fill="url(#e)" d="M17.0175 12.1904c1.2972 1.0355 2.9837 2.537 3.5413 4.0276.2276.6031.4071.4442.6347-.1475.5234-1.354.8534-2.6057.8534-3.6411 0-5.40485-3.9939-9.78562-8.9095-9.78562-.2389 0-.4665.01138-.7055.03413-.9102.07965-1.6726.73962-1.8888 1.62715v.01138c-.2162.92166-.1252 1.87746.3755 2.765 1.3427 2.36675 4.0622 3.49326 6.0989 5.10896Z"/>
+                          <path fill="#782200" d="M13.306 3.41302c2.1103.98914 4.089 2.27988 5.9462 3.70074.0434.04047.1084-.04249.065-.08296-1.6494-1.7574-3.6893-2.94916-5.9783-3.69318-.0358-.00845-.0688.06695-.0329.0754Z" opacity=".11"/>
+                          <path fill="url(#f)" d="M4.85365 22.0495c-.95316-.983-1.9361-1.9361-2.91905-2.9042-.31275-.2978-.80423.0447-.64041.4319 1.92122 4.4382 5.19771 9.4572 7.49125 12.7337.29786.417.93827.2531 1.01273-.2532.0149-.1639.04468-.3277.05958-.4915.11914-1.2808-.13404-2.5169-.67019-3.7084-.98295-2.2191-2.63609-4.0807-4.33391-5.8083Z"/>
+                          <path fill="url(#g)" d="M5.29372 24.2252c1.07123 1.6068 2.05319 3.2732 2.931 4.9842.52073 1.0117 1.02659 2.0829 1.41342 3.169.07439-.0744.14095-.1976.15583-.3315.01488-.1637.04512-.3252.06-.4888.11902-1.2796-.13526-2.5088-.67088-3.6991-.98196-2.2317-2.65448-4.095-4.33571-5.8209-.95221-.982-1.93416-1.9342-2.91612-2.9012-.17854-.1786-.42177-.1331-.57055.0306 1.45806 1.5771 2.74276 3.2723 3.93301 5.0577Z"/>
+                          <path fill="#44C1F3" d="M4.37642 24.6309c.15889-.0679.13667-.4761-.04964-.9116-.1863-.4356-.46613-.7336-.62502-.6656-.15889.068-.13667.4761.04963.9117.18631.4355.46614.7335.62503.6655Zm.6544 1.1357c-.08935.0556-.27841-.0866-.424-.3185s-.18731-.4662-.09795-.5218c.08936-.0557.27841.0866.424.3185s.18731.4662.09795.5218Z"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="b" x1="13.595" x2="4.95698" y1="33.4138" y2="4.37219" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#76ED00"/>
+                            <stop offset=".526466" stop-color="#5DBB00"/>
+                            <stop offset="1" stop-color="#418300"/>
+                          </linearGradient>
+                          <linearGradient id="c" x1="14.2602" x2="4.86195" y1="32.8618" y2="5.00674" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8AE62F"/>
+                            <stop offset=".526466" stop-color="#8FD04F"/>
+                            <stop offset="1" stop-color="#61B110"/>
+                          </linearGradient>
+                          <linearGradient id="d" x1="22.5054" x2="11.7859" y1="23.4693" y2="-2.74171" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EEC6B6"/>
+                            <stop offset=".180065" stop-color="#E2A085"/>
+                            <stop offset=".3723" stop-color="#D8805C"/>
+                            <stop offset=".4892" stop-color="#D0663B"/>
+                            <stop offset=".6084" stop-color="#CA5221"/>
+                            <stop offset=".7309" stop-color="#C5430F"/>
+                            <stop offset=".8585" stop-color="#C33B04"/>
+                            <stop offset="1" stop-color="#962B00"/>
+                          </linearGradient>
+                          <linearGradient id="e" x1="21.6421" x2="13.4522" y1="19.8861" y2="-.139561" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E19E82"/>
+                            <stop offset=".6084" stop-color="#CA5221"/>
+                            <stop offset=".815854" stop-color="#C5430F"/>
+                            <stop offset="1" stop-color="#C33B04"/>
+                          </linearGradient>
+                          <linearGradient id="f" x1="9.34602" x2="-1.38738" y1="33.1487" y2="21.8125" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#44C1F3"/>
+                            <stop offset=".529965" stop-color="#24A9DE"/>
+                            <stop offset="1" stop-color="#0087BD"/>
+                          </linearGradient>
+                          <linearGradient id="g" x1="9.34101" x2="-1.26607" y1="32.9722" y2="21.7685" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#71D7FF"/>
+                            <stop offset=".529965" stop-color="#30B9EF"/>
+                            <stop offset="1" stop-color="#1BABE3"/>
+                          </linearGradient>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M.347656.643555h24.25v33.7391h-24.25z"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </svg>
+            </div>
+        </section>
+        <section class="mmkk-o-content">
+            <div class="mmkk-o-content__container mmkk-o-tabs">
+                <div class=" mmkk-o__content mmkk-o__content_active" data-tabs-target="moskva">
+                    <div class="content">
+                        <h2 class="content__title">
+                            Москва</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">15</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">1160</span>
+                                    <p>вовлечено
+                                        участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">105</span>
+                                    <p>высажено деревьев
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" mmkk-o__content" data-tabs-target="bryansk">
+                    <div class="content">
+                        <h2 class="content__title">
+                            Брянск</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">15</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">1160</span>
+                                    <p>вовлечено
+                                        участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">105</span>
+                                    <p>высажено деревьев
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">
+                        Благодаря данному филиалу РЭУ им. Г.В. Плеханова вошел в список членов Ассоциации «зеленых»
+                        вузов России.
+                    </p>
+                    <span class="content__descr-span"> Собрано: 60 мешков ТБО и 10 кг вторсырья на переработку.</span>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="volgograd">
+                    <div class="content">
+                        <h2 class="content__title">Волгоград</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">5</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">178</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">15</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="content__descr">
+                        Получен именной сертификат на фамильный саженец «Плехановец»
+                    </p>
+                    <span class="content__descr-span"> Собрано: 132 батарейки для утилизации.</span>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="voronej">
+                    <div class="content">
+                        <h2 class="content__title">Воронеж</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">3</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">170</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">150</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="erevan">
+                    <div class="content">
+                        <h2 class="content__title">Ереван</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">7</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">43</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <ol class="content__reward">
+                        <li>
+                            <p class="content__reward-text">Статьи в сборнике научных статей Ереванского филиала РЭУ им.
+                                Г.В. Плеханова "Проблемы социально-экономического развития: поиски, перспективы,
+                                решения".</p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">Выигран конкурс цифровых проектных работ студентов, который
+                                стартовал в апреле 2021 года на платформе HIVE. Победители получили грант на развитие и
+                                реализацию проекта в размере 50 000 рублей.</p>
+                        </li>
+                    </ol>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="ivanovo">
+                    <div class="content">
+                        <h2 class="content__title">Иваново</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">15</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">185</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <ol class="content__reward">
+                        <li>
+                            <p class="content__reward-text">Конкурс на выполнение НИР «Шаг в науку» -1 экологический
+                                проект выигран и находится в стадии реализации.</p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">Конкурс фонда президентских грантов 2023- 1 заявка находится
+                                на стадии рассмотрения.</p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">VIII Всероссийский конкурс научно-исследовательских работ- 1
+                                стартап находится на стадии рассмотрения.</p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">Грантовый конкурс Фонда содействия инновациям «Студенческий
+                                стартап»- 1 экологический проект находится на стадии рассмотрения.</p>
+                        </li>
+                    </ol>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="krasnodar">
+                    <div class="content">
+                        <h2 class="content__title">Краснодар</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">4</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">306</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="content__descr">Результат - 22 доклада с «зеленой» повесткой</p>
+                    <span class="content__descr-span"> Собрано: 150 батареек для утилизации.</span>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="minsk">
+                    <div class="content">
+                        <h2 class="content__title">Минск</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">4</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">434</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">5000</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Полученные награды:</h3>
+                    <ol class="content__reward">
+                        <li>
+                            <p class="content__reward-text">Конкурс проектов в области цифровых технологий,
+                                предпринимательства, зеленых инноваций и IT-решений в РЭУ им. Г.В. Плеханова.</p>
+                        </li>
+                    </ol>
+                    <p class="content__descr">
+                        Цель: развитие научно-предпринимательской инициативы методом проведения консультационной
+                        поддержки со стороны специалистов Центра развития цифровой экосистемы, а так же специалистов
+                        портала HIVE.
+                    </p>
+                    <span class="content__descr-span"> Количество участников: 321 человек.</span>
+                    <span class="content__descr-span"> Результат: Проект двух студентов Минского филиала РЭУ им.
+                        Г.В. Плеханова «Развитие
+                        экологических
+                        инициатив в Минском филиале РЭУ им. Г.В. Плеханова» стал победителем конкурса. На реализацию
+                        проекта выделен грант университета на сумму 50 000 российских рублей
+                    </span>
+                    <h3 class="content__leader">Лидер - представитель филиала: </h3>
+                    <div class="content__wrapper-leader">
+                        <div class="mission__avatar-container">
+                            <!-- <img class="mission__border" src="<%=require('./images/border.png')%>"
+                                alt="Изображение обводки"> -->
+                            <img src="<%=require('./images/people/mozalkov.png')%>"
+                                alt="Фотография Лобанов Иван Васильевич" class="mission__avatar">
+                        </div>
+                        <div>
+                            <h3 class="content__leader-name">Мозальков Владислав Евгеньевич</h3>
+                            <p class="content__leader-status">Студент 3 курса </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="orenburg">
+                    <div class="content">
+                        <h2 class="content__title">Оренбург</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">9</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">896</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">
+                        Проведено 16 информационно-просветительских мероприятий
+                    </p>
+                    <p class="content__descr-span">Собрано: 80 кг крышек и 432 кг макулатуры</p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="perm">
+                    <div class="content">
+                        <h2 class="content__title">Пермь</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">3</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">480</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">
+                        Заслушано 33 доклада с «зеленой» повесткой
+                    </p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="pyatigorsk">
+                    <div class="content">
+                        <h2 class="content__title">Пятигорск</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">6</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">374</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">20</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr-span">Собрано: 93 кг макулатуры</p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="sevastopol">
+                    <div class="content">
+                        <h2 class="content__title">Севастополь</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">6</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">309</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">15</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <ol class="content__reward">
+                        <li>
+                            <p class="content__reward-text">Создание эко-туристического проекта «Фиолентовская тропа»
+                                В 2022 году проект стал победителем в номинации «Инновации в туризме» XVIII
+                                Международного салона изобретений и технологий «Новое время».
+                                В 2023 году проект был представлен в рамках V Международного научного форума «Шаг в
+                                будущее: искусственный интеллект и цифровая экономика» РЭУ им. Г.В. Плеханова в городе
+                                Москва.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">II Международная научно-практическая конференция «Изучение
+                                водных и наземных экосистем: история и современность»: 8 научных секций, 4 круглых
+                                стола, 110 докладов.</p>
+                        </li>
+                    </ol>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="smolensk">
+                    <div class="content">
+                        <h2 class="content__title">Смоленск</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">6</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">380</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">300</span>
+                                    <p>высажено деревьев,цветов и многолетних растений</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">Благодаря команде студентов-добровольцев филиала, были собраны с
+                        волонтерами средства и закуплено 600 кг корма и консервов для 350 животных-обитателей приюта
+                        «Верность»</p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="tashkent">
+                    <div class="content">
+                        <h2 class="content__title">Ташкент</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">10</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">432</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">200</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <ol class="content__reward">
+                        <li>
+                            <p class="content__reward-text">Подписан совместный Меморандум о сотрудничестве между
+                                председателем Правления Общественного благотворительного фонда «Мерос» А. Иминовым и
+                                Академиком К.Х. Абдурахмановым.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">Подписан Меморандум о взаимопонимании между центром Новых
+                                климатических инноваций NCI ТГЭУ и Научной лаборатории исследований зеленой экономики
+                                «GreenEcoHub» при участии Ташкентского филиала.</p>
+                        </li>
+                    </ol>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="tula">
+                    <div class="content">
+                        <h2 class="content__title">Тула</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">2</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">57</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">150</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <ol class="content__reward">
+                        <li>
+                            <p class="content__reward-text">Принято участие в пленарной сессии Молодежного
+                                Яснополянского форума
+                            </p>
+                        </li>
+                        <li>
+                            <p class="content__reward-text">Занято первое место в конкурсе творческих работ по созданию
+                                оригинального экологического проекта.</p>
+                        </li>
+                    </ol>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="ulan-bator">
+                    <div class="content">
+                        <h2 class="content__title">Улан-Батор</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">5</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">570</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">30</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">Проект школьника «Лес на подоконнике», благодаря которому на территории
+                        филиала были высажены саженцы, выращенные дома на подоконнике из семян клёна, принял участие в
+                        межрегиональной конференции Эклогическое мировоззрение и здоровый образ жизни для детей и
+                        молодежи XXI веке» по направлению «Человек-Общество-Природа». </p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="hanoi">
+                    <div class="content">
+                        <h2 class="content__title">Улан-Батор</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">5</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">570</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">30</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">Проект школьника «Лес на подоконнике», благодаря которому на территории
+                        филиала были высажены саженцы, выращенные дома на подоконнике из семян клёна, принял участие в
+                        межрегиональной конференции Эклогическое мировоззрение и здоровый образ жизни для детей и
+                        молодежи XXI веке» по направлению «Человек-Общество-Природа». </p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+                <div class="mmkk-o__content" data-tabs-target="vietnyan">
+                    <div class="content">
+                        <h2 class="content__title">Улан-Батор</h2>
+                        <div class="content__wrapper">
+                            <ul class="content__list">
+                                <li>
+                                    <span class="content__number">5</span>
+                                    <p>мероприятий</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">570</span>
+                                    <p>вовлечено участников</p>
+                                </li>
+                                <li>
+                                    <span class="content__number">30</span>
+                                    <p>высажено деревьев</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="content__subtitle">Результат:</h3>
+                    <p class="content__descr">Проект школьника «Лес на подоконнике», благодаря которому на территории
+                        филиала были высажены саженцы, выращенные дома на подоконнике из семян клёна, принял участие в
+                        межрегиональной конференции Эклогическое мировоззрение и здоровый образ жизни для детей и
+                        молодежи XXI веке» по направлению «Человек-Общество-Природа». </p>
+                    <h3 class="content__leader">Лидер - представитель филиала:</h3>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

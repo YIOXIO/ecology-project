@@ -1,0 +1,224 @@
+ /* Общие стили */
+ @import '../vendor/normalize.css';
+ @import '../vendor/fonts.css';
+ @import '../blocks/root/root.css';
+
+
+ .post__container {
+     margin: 0 auto;
+     max-width: 1167px;
+ }
+
+ .post__title {
+     color: #191919;
+     font-family: 'Montserrat';
+     font-size: 50px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     margin: 0 auto 50px 294px;
+     padding: 0;
+     max-width: 1380px;
+ }
+
+ .post__gallery {
+     display: flex;
+     box-sizing: border-box;
+     gap: 20px;
+     align-items: center;
+     margin-bottom: 39px;
+ }
+
+ .post__date {
+     color: #9B9B9B;
+     font-family: 'Inter';
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+     padding: 0;
+     margin: 0 0 33px;
+ }
+
+ .post__text {
+     color: #191919;
+     font-family: 'Inter';
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 135%;
+     margin: 0;
+     padding: 0;
+     max-width: 1125px;
+ }
+
+ .post__span {
+     color: #191919;
+     font-family: 'Inter';
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 135%;
+ }
+
+
+ .post__media {
+     display: flex;
+     flex-direction: column;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     gap: 23px;
+
+ }
+
+ .post__photo-main {
+     max-width: 913px;
+     max-height: 574px;
+     width: 100%;
+     height: 100%;
+ }
+
+ .post__photo {
+     max-height: 153px;
+     height: 100%;
+     max-width: 233px;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ @import '../blocks/news/__wrapper/news__wrapper.css';
+ @import '../blocks/news/__title/news__title.css';
+ @import '../blocks/news/__list/news__list.css';
+ @import '../blocks/news/__link/news__link.css';
+ @import '../blocks/news/__image/news__iamge.css';
+ @import '../blocks/news/__descr/news__descr.css';
+ @import '../blocks/news/__date/news__date.css';
+ @import '../blocks/news/__container/news__container.css';
+ @import '../blocks/news/__card/news__card.css';
+ @import '../blocks/news/__card/_big/news__card_big.css';
+ @import '../blocks/news/__button/news__button.css';
+
+
+ .slider {
+     color: #fff;
+     margin-bottom: 32px;
+ }
+
+ .slider .swiper-container {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .slider__flex {
+     display: flex;
+     align-items: flex-start;
+     flex-direction: row-reverse;
+     justify-content: flex-end;
+     gap: 20px;
+ }
+
+ .slider__col {
+     display: flex;
+     flex-direction: column;
+     width: 150px;
+     margin-right: 32px;
+ }
+
+ .slider__prev,
+ .slider__next {
+     cursor: pointer;
+     text-align: center;
+     font-size: 14px;
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
+
+ .slider__prev:focus,
+ .slider__next:focus {
+     outline: none;
+ }
+
+ .slider__thumbs {
+     height: calc(550px - 96px);
+ }
+
+ .slider__thumbs .slider__image {
+     transition: 0.25s;
+     -webkit-filter: grayscale(100%);
+     filter: grayscale(100%);
+     opacity: 0.5;
+ }
+
+ .slider__thumbs .slider__image:hover {
+     opacity: 1;
+ }
+
+ .slider__thumbs .swiper-slide-thumb-active .slider__image {
+     -webkit-filter: grayscale(0%);
+     filter: grayscale(0%);
+     opacity: 1;
+ }
+
+ .slider__images {
+     height: 574px;
+ }
+
+
+ .slider__image {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .slider__image img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+ }
+
+ @media (max-width: 767.98px) {
+     .slider__flex {
+         flex-direction: column-reverse;
+     }
+
+     .slider__col {
+         flex-direction: row;
+         align-items: center;
+         margin-right: 0;
+         margin-top: 24px;
+         width: 100%;
+     }
+
+     .slider__images {
+         width: 100%;
+     }
+
+     .slider__thumbs {
+         height: 100px;
+         width: calc(100% - 96px);
+         margin: 0 16px;
+     }
+
+     .slider__prev,
+     .slider__next {
+         height: auto;
+         width: 32px;
+     }
+ }
+
+ .post__list {
+     margin-top: 90px;
+     justify-content: center;
+     background-color: #F4F4F4;
+     padding: 105px 105px 40px;
+ }
